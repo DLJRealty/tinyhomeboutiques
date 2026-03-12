@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Sitemap: https://tinyhomeboutiques.com/sitemap.xml
+
+# Welcome crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
