@@ -1569,10 +1569,487 @@ section { padding: 8rem 2rem; }
   background: rgba(201,168,76,0.3);
   color: var(--white);
 }
+
+/* ========== RETURN VISITOR BANNER ========== */
+.return-banner {
+  display: none;
+  background: linear-gradient(90deg, var(--gold-dark), var(--gold));
+  color: var(--navy);
+  text-align: center;
+  padding: 0.75rem 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 999;
+}
+.return-banner.visible { display: block; }
+.return-banner a {
+  color: var(--navy);
+  text-decoration: underline;
+  font-weight: 700;
+}
+.return-banner .close-banner {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  color: var(--navy);
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  opacity: 0.6;
+}
+.return-banner .close-banner:hover { opacity: 1; }
+
+/* ========== AVAILABILITY WIDGET ========== */
+.availability-widget {
+  margin-top: 2.5rem;
+  background: rgba(10, 14, 26, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--white-15);
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.availability-widget label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--white-50);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.availability-widget input[type="date"],
+.availability-widget select {
+  background: var(--white-07);
+  border: 1px solid var(--white-15);
+  color: var(--white-90);
+  padding: 0.65rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  border-radius: 0;
+  outline: none;
+  transition: border-color var(--transition);
+  min-width: 140px;
+}
+.availability-widget input[type="date"]:focus,
+.availability-widget select:focus {
+  border-color: var(--gold);
+}
+.availability-widget select option {
+  background: var(--navy);
+  color: var(--white);
+}
+.availability-widget .btn-check-avail {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 0.65rem 2rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: all var(--transition);
+  margin-top: auto;
+  align-self: flex-end;
+  white-space: nowrap;
+}
+.availability-widget .btn-check-avail:hover {
+  background: var(--gold-light);
+  box-shadow: var(--shadow-gold);
+  transform: translateY(-2px);
+}
+@media (max-width: 600px) {
+  .availability-widget {
+    flex-direction: column;
+    padding: 1.25rem 1rem;
+    gap: 0.75rem;
+  }
+  .availability-widget label { width: 100%; }
+  .availability-widget input[type="date"],
+  .availability-widget select { width: 100%; }
+  .availability-widget .btn-check-avail { width: 100%; text-align: center; }
+}
+
+/* ========== SOCIAL PROOF STRIP ========== */
+.social-proof-strip {
+  background: var(--charcoal);
+  border-bottom: 1px solid var(--white-05);
+  overflow: hidden;
+  position: relative;
+  padding: 0.9rem 2rem;
+}
+.social-proof-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.4rem;
+  position: relative;
+}
+.social-proof-msg {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--white-70);
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: proofCycle 12s infinite;
+}
+.social-proof-msg:nth-child(1) { animation-delay: 0s; }
+.social-proof-msg:nth-child(2) { animation-delay: 3s; }
+.social-proof-msg:nth-child(3) { animation-delay: 6s; }
+.social-proof-msg:nth-child(4) { animation-delay: 9s; }
+@keyframes proofCycle {
+  0% { opacity: 0; transform: translateY(12px); }
+  5% { opacity: 1; transform: translateY(0); }
+  20% { opacity: 1; transform: translateY(0); }
+  25% { opacity: 0; transform: translateY(-12px); }
+  100% { opacity: 0; transform: translateY(-12px); }
+}
+
+/* ========== PRICE COMPARISON ========== */
+.price-comparison {
+  background: var(--charcoal);
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--white-05);
+}
+.price-comparison::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,168,76,0.04), transparent 70%);
+  pointer-events: none;
+}
+.price-compare-box {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.price-card {
+  background: var(--white-05);
+  border: 1px solid var(--white-10);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+  transition: all var(--transition);
+}
+.price-card:hover { border-color: var(--white-20); }
+.price-card.airbnb .price-amount {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white-40);
+  text-decoration: line-through;
+  text-decoration-color: rgba(220,60,60,0.7);
+  text-decoration-thickness: 3px;
+}
+.price-card.direct {
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.05);
+}
+.price-card.direct .price-amount {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+.price-card-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--white-40);
+  margin-bottom: 0.75rem;
+}
+.price-card .per-night {
+  font-size: 0.85rem;
+  color: var(--white-40);
+  font-weight: 300;
+  margin-top: 0.25rem;
+}
+.price-arrow {
+  font-size: 1.8rem;
+  color: var(--gold);
+}
+.price-savings {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+.price-savings .save-amount {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.price-savings .save-detail {
+  font-family: var(--font-elegant);
+  font-size: 1.1rem;
+  color: var(--white-50);
+  font-style: italic;
+  font-weight: 300;
+}
+@media (max-width: 600px) {
+  .price-compare-box { gap: 1rem; }
+  .price-arrow { transform: rotate(90deg); }
+}
+
+/* ========== TRUST BADGES ========== */
+.trust-badges {
+  background: var(--navy);
+  border-top: 1px solid var(--white-05);
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.trust-badge {
+  background: var(--white-03);
+  border: 1px solid var(--white-07);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all var(--transition);
+}
+.trust-badge:hover {
+  background: var(--white-05);
+  border-color: var(--white-15);
+  transform: translateY(-4px);
+}
+.trust-badge-icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.trust-badge-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--white-90);
+  margin-bottom: 0.25rem;
+}
+.trust-badge-sub {
+  font-size: 0.75rem;
+  color: var(--white-40);
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .trust-grid { grid-template-columns: 1fr; }
+}
+
+/* ========== EXPERIENCE ITINERARY ========== */
+.itinerary {
+  background: var(--charcoal);
+  border-top: 1px solid var(--white-05);
+}
+.itinerary-timeline {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 3rem;
+}
+.itinerary-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.6rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--gold), var(--white-10));
+}
+.itinerary-item {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+.itinerary-item:last-child { padding-bottom: 0; }
+.itinerary-item::before {
+  content: '';
+  position: absolute;
+  left: -2.65rem;
+  top: 0.25rem;
+  width: 10px;
+  height: 10px;
+  background: var(--gold);
+  transform: rotate(45deg);
+}
+.itinerary-time {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  margin-bottom: 0.35rem;
+}
+.itinerary-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--white-90);
+  margin-bottom: 0.35rem;
+}
+.itinerary-desc {
+  font-size: 0.9rem;
+  color: var(--white-50);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* ========== EMAIL CAPTURE ========== */
+.email-capture {
+  background: var(--navy);
+  padding: 5rem 2rem;
+  border-top: 1px solid var(--white-05);
+}
+.email-capture-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.email-capture-inner h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.email-capture-inner p {
+  font-family: var(--font-elegant);
+  font-size: 1.05rem;
+  color: var(--white-50);
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+.email-form {
+  display: flex;
+  gap: 0;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.email-form input[type="email"] {
+  flex: 1;
+  background: var(--white-05);
+  border: 1px solid var(--white-15);
+  border-right: none;
+  color: var(--white-90);
+  padding: 0.9rem 1.25rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  border-radius: 0;
+  outline: none;
+  transition: border-color var(--transition);
+}
+.email-form input[type="email"]:focus { border-color: var(--gold); }
+.email-form input[type="email"]::placeholder { color: var(--white-30); }
+.email-form button {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 0.9rem 2rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: 1px solid var(--gold);
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.email-form button:hover {
+  background: var(--gold-light);
+  box-shadow: var(--shadow-gold);
+}
+@media (max-width: 480px) {
+  .email-form { flex-direction: column; }
+  .email-form input[type="email"] { border-right: 1px solid var(--white-15); border-bottom: none; }
+}
+
+/* ========== STICKY MOBILE BOOKING BAR ========== */
+.mobile-book-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  background: rgba(10, 14, 26, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid var(--white-10);
+  padding: 0.85rem 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-book-bar .mobile-price {
+  font-size: 0.7rem;
+  color: var(--white-50);
+  font-weight: 300;
+}
+.mobile-book-bar .mobile-price strong {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--white);
+  display: block;
+  line-height: 1.1;
+}
+.mobile-book-bar .btn-mobile-book {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 0.75rem 1.8rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: all var(--transition);
+}
+.mobile-book-bar .btn-mobile-book:hover {
+  background: var(--gold-light);
+}
+@media (max-width: 768px) {
+  .mobile-book-bar { display: flex; }
+  .footer { padding-bottom: 5rem; }
+}
 </style>
 </head>
 
 <body>
+
+<!-- Return Visitor Banner -->
+<div class="return-banner" id="returnBanner">
+  Welcome back! The properties you viewed are still available. <a href="https://tinyhomeboutiques.guestybookings.com/en" target="_blank" rel="noopener">Book direct and save 15%</a>.
+  <button class="close-banner" onclick="document.getElementById('returnBanner').style.display='none';">&times;</button>
+</div>
 
 <!-- Preloader -->
 <div class="preloader" id="preloader">
@@ -1625,6 +2102,29 @@ section { padding: 8rem 2rem; }
         <span>Explore Properties</span>
       </a>
     </div>
+    <!-- Availability Widget -->
+    <div class="availability-widget">
+      <label>
+        Check-in
+        <input type="date" id="checkinDate">
+      </label>
+      <label>
+        Check-out
+        <input type="date" id="checkoutDate">
+      </label>
+      <label>
+        Guests
+        <select id="guestCount">
+          <option value="1">1 Guest</option>
+          <option value="2" selected>2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5">5 Guests</option>
+          <option value="6">6 Guests</option>
+        </select>
+      </label>
+      <a href="https://tinyhomeboutiques.guestybookings.com/en" class="btn-check-avail" target="_blank" rel="noopener">Check Availability</a>
+    </div>
     <div class="hero-stats">
       <div class="hero-stat">
         <div class="hero-stat-num">4</div>
@@ -1645,6 +2145,16 @@ section { padding: 8rem 2rem; }
     <div class="hero-scroll-line"></div>
   </div>
 </section>
+
+<!-- Social Proof Strip -->
+<div class="social-proof-strip">
+  <div class="social-proof-track">
+    <span class="social-proof-msg">&#9733; 500+ Five-Star Reviews from Verified Guests</span>
+    <span class="social-proof-msg">&#128293; Last booked 3 hours ago</span>
+    <span class="social-proof-msg">&#128197; Only 4 weekends left in April</span>
+    <span class="social-proof-msg">&#128176; Save 15% when you book direct</span>
+  </div>
+</div>
 
 <!-- Experience Strip -->
 <div class="experience-strip">
@@ -1851,6 +2361,34 @@ section { padding: 8rem 2rem; }
   </div>
 </section>
 
+<!-- Price Comparison -->
+<section class="price-comparison" id="price-compare">
+  <div class="section-container">
+    <div class="section-header reveal">
+      <div class="section-label">Your Savings</div>
+      <h2 class="section-title">See How Much You Save Booking Direct</h2>
+      <p class="section-desc">Why pay more on third-party platforms? Book direct and keep the savings.</p>
+    </div>
+    <div class="price-compare-box reveal">
+      <div class="price-card airbnb">
+        <div class="price-card-label">Airbnb Price</div>
+        <div class="price-amount">$215</div>
+        <div class="per-night">per night</div>
+      </div>
+      <div class="price-arrow">&#8594;</div>
+      <div class="price-card direct">
+        <div class="price-card-label">Book Direct Price</div>
+        <div class="price-amount">$185</div>
+        <div class="per-night">per night</div>
+      </div>
+      <div class="price-savings">
+        <div class="save-amount">You Save $30/night</div>
+        <div class="save-detail">On a 5-night stay, that's $150 back in your pocket</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Gallery Strip -->
 <div class="gallery-strip reveal">
   <div class="gallery-overlay"></div>
@@ -1988,6 +2526,86 @@ section { padding: 8rem 2rem; }
   </div>
 </section>
 
+<!-- Why Guests Love Us - Trust Badges -->
+<section class="trust-badges" id="trust">
+  <div class="section-container">
+    <div class="section-header reveal">
+      <div class="section-label">Why Guests Love Us</div>
+      <h2 class="section-title">The DLJ Difference</h2>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-badge reveal reveal-delay-1">
+        <span class="trust-badge-icon">&#127942;</span>
+        <div class="trust-badge-title">Superhost Since 2020</div>
+        <div class="trust-badge-sub">Consistently top-rated</div>
+      </div>
+      <div class="trust-badge reveal reveal-delay-2">
+        <span class="trust-badge-icon">&#11088;</span>
+        <div class="trust-badge-title">500+ Five-Star Reviews</div>
+        <div class="trust-badge-sub">Verified guest experiences</div>
+      </div>
+      <div class="trust-badge reveal reveal-delay-3">
+        <span class="trust-badge-icon">&#128222;</span>
+        <div class="trust-badge-title">24/7 Guest Support</div>
+        <div class="trust-badge-sub">Real people, real fast</div>
+      </div>
+      <div class="trust-badge reveal reveal-delay-1">
+        <span class="trust-badge-icon">&#128176;</span>
+        <div class="trust-badge-title">Best Price Guarantee</div>
+        <div class="trust-badge-sub">Always the lowest rate</div>
+      </div>
+      <div class="trust-badge reveal reveal-delay-2">
+        <span class="trust-badge-icon">&#9889;</span>
+        <div class="trust-badge-title">Instant Confirmation</div>
+        <div class="trust-badge-sub">Book and you're set</div>
+      </div>
+      <div class="trust-badge reveal reveal-delay-3">
+        <span class="trust-badge-icon">&#10004;&#65039;</span>
+        <div class="trust-badge-title">Free Cancellation Available</div>
+        <div class="trust-badge-sub">Flexible booking options</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Perfect Day Itinerary -->
+<section class="itinerary" id="itinerary">
+  <div class="section-container">
+    <div class="section-header reveal">
+      <div class="section-label">Plan Your Visit</div>
+      <h2 class="section-title">A Perfect Day in Woodland Park</h2>
+      <p class="section-desc">Here's how your dream day unfolds when you stay with us.</p>
+    </div>
+    <div class="itinerary-timeline reveal">
+      <div class="itinerary-item">
+        <div class="itinerary-time">Morning &mdash; 7:00 AM</div>
+        <div class="itinerary-title">Coffee on the deck watching sunrise over Pikes Peak</div>
+        <div class="itinerary-desc">Step outside with a fresh cup of coffee and watch the first golden light hit America's Mountain. This is the moment guests say they'll never forget.</div>
+      </div>
+      <div class="itinerary-item">
+        <div class="itinerary-time">Mid-Morning &mdash; 9:30 AM</div>
+        <div class="itinerary-title">Hike Barr Trail or explore Mueller State Park</div>
+        <div class="itinerary-desc">Lace up your boots and hit the trails. Mueller State Park is just 15 minutes away with 55+ miles of pristine wilderness. Or tackle the legendary Barr Trail toward the summit.</div>
+      </div>
+      <div class="itinerary-item">
+        <div class="itinerary-time">Lunch &mdash; 12:00 PM</div>
+        <div class="itinerary-title">Local favorites in downtown Woodland Park</div>
+        <div class="itinerary-desc">Refuel at one of Woodland Park's charming restaurants. From craft breweries to cozy cafes, this mountain town has surprisingly great food.</div>
+      </div>
+      <div class="itinerary-item">
+        <div class="itinerary-time">Afternoon &mdash; 2:00 PM</div>
+        <div class="itinerary-title">Drive to Garden of the Gods or Manitou Springs</div>
+        <div class="itinerary-desc">Take the scenic drive down Ute Pass to Garden of the Gods (free!) or explore the quirky shops and mineral springs of Manitou Springs. Both are under 30 minutes away.</div>
+      </div>
+      <div class="itinerary-item">
+        <div class="itinerary-time">Evening &mdash; 6:30 PM</div>
+        <div class="itinerary-title">Sunset from the hot tub with local craft beer</div>
+        <div class="itinerary-desc">End the day watching Pikes Peak glow gold and pink as the sun sets. Sink into the hot tub with a local Colorado brew and let the mountain air do its magic.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Area Guide - SEO Content -->
 <section class="about area-guide" id="area-guide" style="background:var(--charcoal);">
   <div class="section-container">
@@ -2100,6 +2718,18 @@ section { padding: 8rem 2rem; }
   </div>
 </section>
 
+<!-- Email Capture -->
+<div class="email-capture">
+  <div class="email-capture-inner reveal">
+    <h2>Get Our Free Pikes Peak Visitor Guide</h2>
+    <p>Insider tips on the best hikes, restaurants, and hidden gems around Woodland Park. Delivered straight to your inbox.</p>
+    <form class="email-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Sent!'; this.querySelector('input').value='';">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit">Get the Guide</button>
+    </form>
+  </div>
+</div>
+
 <!-- Footer -->
 <footer class="footer" id="contact">
   <div class="footer-grid">
@@ -2155,6 +2785,15 @@ section { padding: 8rem 2rem; }
     </div>
   </div>
 </footer>
+
+<!-- Sticky Mobile Booking Bar -->
+<div class="mobile-book-bar">
+  <div class="mobile-price">
+    From
+    <strong>$149/night</strong>
+  </div>
+  <a href="https://tinyhomeboutiques.guestybookings.com/en" class="btn-mobile-book" target="_blank" rel="noopener">Book Now</a>
+</div>
 
 <script>
 (function() {
@@ -2338,6 +2977,33 @@ section { padding: 8rem 2rem; }
       });
     }
   });
+
+  // ===== RETURN VISITOR DETECTION =====
+  (function() {
+    var visited = localStorage.getItem('thb_visited');
+    if (visited) {
+      var banner = document.getElementById('returnBanner');
+      if (banner) banner.classList.add('visible');
+    }
+    localStorage.setItem('thb_visited', '1');
+  })();
+
+  // ===== SET DEFAULT DATES FOR AVAILABILITY WIDGET =====
+  (function() {
+    var checkin = document.getElementById('checkinDate');
+    var checkout = document.getElementById('checkoutDate');
+    if (checkin && checkout) {
+      var today = new Date();
+      var nextFri = new Date(today);
+      nextFri.setDate(today.getDate() + ((5 - today.getDay() + 7) % 7 || 7));
+      var nextSun = new Date(nextFri);
+      nextSun.setDate(nextFri.getDate() + 2);
+      checkin.min = today.toISOString().split('T')[0];
+      checkout.min = today.toISOString().split('T')[0];
+      checkin.value = nextFri.toISOString().split('T')[0];
+      checkout.value = nextSun.toISOString().split('T')[0];
+    }
+  })();
 
 })();
 </script>
