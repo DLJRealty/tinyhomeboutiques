@@ -58,7 +58,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["LodgingBusiness", "LocalBusiness"],
+  "@type": "LodgingBusiness",
   "name": "Tiny Home Boutiques by DLJ Properties",
   "alternateName": ["Tiny Home Boutiques", "DLJ Properties", "DLJ Realty Tiny Homes"],
   "description": "4 luxury boutique tiny home vacation rentals in Woodland Park, Colorado with direct Pikes Peak views. Airbnb Superhost with 500+ five-star reviews. Book direct and save 15% with no service fees. Fireplaces, firepits, flat screen TVs, mountain views.",
@@ -149,18 +149,8 @@
       {"@type": "LocationFeatureSpecification", "name": "Pikes Peak Views"},
       {"@type": "LocationFeatureSpecification", "name": "Fire Pit"},
       {"@type": "LocationFeatureSpecification", "name": "Game Console"},
-      {"@type": "LocationFeatureSpecification", "name": "Boutique Design"},
-      {"@type": "LocationFeatureSpecification", "name": "Full Kitchen"},
-      {"@type": "LocationFeatureSpecification", "name": "Free WiFi"},
-      {"@type": "LocationFeatureSpecification", "name": "Free Parking"}
-    ],
-    "checkinTime": "15:00",
-    "checkoutTime": "11:00",
-    "occupancy": {"@type": "QuantitativeValue", "value": 4},
-    "floorSize": {"@type": "QuantitativeValue", "value": 400, "unitCode": "FTK"},
-    "petsAllowed": false,
-    "tourBookingPage": "https://tinyhomeboutiques.guestybookings.com/en",
-    "starRating": {"@type": "Rating", "ratingValue": "4.9", "bestRating": "5"}
+      {"@type": "LocationFeatureSpecification", "name": "Boutique Design"}
+    ]
   },
   {
     "@context": "https://schema.org",
@@ -174,16 +164,8 @@
     "amenityFeature": [
       {"@type": "LocationFeatureSpecification", "name": "Mountain Views"},
       {"@type": "LocationFeatureSpecification", "name": "Game Room"},
-      {"@type": "LocationFeatureSpecification", "name": "Full Kitchen"},
-      {"@type": "LocationFeatureSpecification", "name": "Free WiFi"},
-      {"@type": "LocationFeatureSpecification", "name": "Free Parking"}
-    ],
-    "checkinTime": "15:00",
-    "checkoutTime": "11:00",
-    "occupancy": {"@type": "QuantitativeValue", "value": 4},
-    "petsAllowed": false,
-    "tourBookingPage": "https://tinyhomeboutiques.guestybookings.com/en",
-    "starRating": {"@type": "Rating", "ratingValue": "4.9", "bestRating": "5"}
+      {"@type": "LocationFeatureSpecification", "name": "Game Room"}
+    ]
   },
   {
     "@context": "https://schema.org",
@@ -198,13 +180,7 @@
       {"@type": "LocationFeatureSpecification", "name": "Pikes Peak Views"},
       {"@type": "LocationFeatureSpecification", "name": "Cozy Interiors"},
       {"@type": "LocationFeatureSpecification", "name": "Firepit"}
-    ],
-    "checkinTime": "15:00",
-    "checkoutTime": "11:00",
-    "occupancy": {"@type": "QuantitativeValue", "value": 4},
-    "petsAllowed": false,
-    "tourBookingPage": "https://tinyhomeboutiques.guestybookings.com/en",
-    "starRating": {"@type": "Rating", "ratingValue": "4.9", "bestRating": "5"}
+    ]
   },
   {
     "@context": "https://schema.org",
@@ -2137,7 +2113,7 @@ section { padding: 8rem 2rem; }
 
 <!-- Return Visitor Banner -->
 <div class="return-banner" id="returnBanner">
-  Welcome back! The properties you viewed are still available. <a href="https://tinyhomeboutiques.guestybookings.com/en" target="_blank" rel="noopener">Book direct and save 15%</a>.
+  Welcome back! The properties you viewed are still available. <a href="https://tinyhomeboutiques.com" target="_blank" rel="noopener">Book direct and save 15%</a>.
   <button class="close-banner" onclick="document.getElementById('returnBanner').style.display='none';document.body.classList.remove('has-banner');">&times;</button>
 </div>
 
@@ -2162,7 +2138,7 @@ section { padding: 8rem 2rem; }
     <li><a href="#area-guide" onclick="closeMenu()">Area Guide</a></li>
     <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
     <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-    <li><a href="https://tinyhomeboutiques.guestybookings.com/en" class="btn-book-nav" target="_blank" rel="noopener" onclick="closeMenu()">Book Now</a></li>
+    <li><a href="https://tinyhomeboutiques.com" class="btn-book-nav" target="_blank" rel="noopener" onclick="closeMenu()">Book Now</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -2179,13 +2155,13 @@ section { padding: 8rem 2rem; }
       <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
       Airbnb Superhost &bull; Guest Favorite
     </div>
-    <h1>Boutique Tiny Home Rentals in<br><em>Woodland Park, Colorado</em></h1>
+    <h1>Good Morning,<br><em>Pikes Peak</em></h1>
     <div class="hero-divider"></div>
     <p class="hero-sub">
       Four handcrafted boutique tiny homes beneath Colorado's towering Pikes Peak. Book direct. Skip the fees. Live the story.
     </p>
     <div class="hero-actions">
-      <a href="https://tinyhomeboutiques.guestybookings.com/en" class="btn-primary" target="_blank" rel="noopener">
+      <a href="https://tinyhomeboutiques.com" class="btn-primary" target="_blank" rel="noopener">
         <span>Book Direct &mdash; Save 15%</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
       </a>
@@ -2214,7 +2190,7 @@ section { padding: 8rem 2rem; }
           <option value="6">6 Guests</option>
         </select>
       </label>
-      <a href="https://tinyhomeboutiques.guestybookings.com/en" class="btn-check-avail" target="_blank" rel="noopener">Check Availability</a>
+      <a href="https://tinyhomeboutiques.com" class="btn-check-avail" target="_blank" rel="noopener">Check Availability</a>
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
@@ -2290,7 +2266,7 @@ section { padding: 8rem 2rem; }
 
       <div class="properties-grid">
         <!-- Property 1: Featured -->
-        <a href="https://tinyhomeboutiques.guestybookings.com/en" target="_blank" rel="noopener" class="property-featured reveal" style="text-decoration:none;color:inherit;">
+        <a href="https://tinyhomeboutiques.com" target="_blank" rel="noopener" class="property-featured reveal" style="text-decoration:none;color:inherit;">
           <div class="property-img">
             <img src="https://assets.guesty.com/image/upload/v1717175094/xxv63qgecggbqlf4cwru.jpg" alt="Boutique TinyHome with direct Pikes Peak views at golden hour" loading="lazy">
             <span class="region-tag">Featured</span>
@@ -2305,7 +2281,7 @@ section { padding: 8rem 2rem; }
               Woodland Park, Colorado
             </span>
             <h3 class="property-name">Boutique TinyHome w/ Direct View of Pikes Peak!</h3>
-            <p class="property-caption">Boutique tiny home with direct Pikes Peak views, firepit, full kitchen, and designer interiors. 2 bedrooms, sleeps 4. Located in Woodland Park, Colorado — 20 minutes from Garden of the Gods. Airbnb Superhost managed. 4.9+ rating. Book direct and save 15% at tinyhomeboutiques.com.</p>
+            <p class="property-caption">"Good Morning Pikes Peak!" Wake up to America's Mountain filling your window. Our signature boutique tiny home offers an intimate, luxurious mountain escape.</p>
             <div class="property-features">
               <span class="property-feature">2 BD / 1 BA</span>
               <span class="property-feature">Sleeps 4</span>
@@ -2322,7 +2298,7 @@ section { padding: 8rem 2rem; }
         </a>
 
         <!-- Property 2 -->
-        <a href="https://tinyhomeboutiques.guestybookings.com/en" target="_blank" rel="noopener" class="property-card reveal reveal-delay-1" style="text-decoration:none;color:inherit;">
+        <a href="https://tinyhomeboutiques.com" target="_blank" rel="noopener" class="property-card reveal reveal-delay-1" style="text-decoration:none;color:inherit;">
           <div class="property-img">
             <img src="https://assets.guesty.com/image/upload/v1717175057/oeww6lzi0ghir4comnsf.jpg" alt="Pikes Peak Boutique Retreat exterior" loading="lazy" style="object-position: center 60%;">
             <span class="region-tag">Colorado</span>
@@ -2337,7 +2313,7 @@ section { padding: 8rem 2rem; }
               <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
               Woodland Park, CO
             </span>
-            <p class="property-caption">Panoramic Pikes Peak views from every room. Boutique tiny home with firepit, flat screen TV, curated decor, and mountain-view deck. 1 bedroom, sleeps 2-3. Perfect for couples and romantic mountain getaways in Woodland Park, Colorado. Superhost managed, 4.9+ rated. Book direct at tinyhomeboutiques.com — no service fees.</p>
+            <p class="property-caption">A boutique mountain retreat with panoramic Pikes Peak views, curated interiors, and everything you need for the perfect Colorado getaway.</p>
             <div class="property-features">
               <span class="property-feature">2 BD / 1 BA</span>
               <span class="property-feature">Sleeps 6</span>
@@ -2354,7 +2330,7 @@ section { padding: 8rem 2rem; }
         </a>
 
         <!-- Property 3 -->
-        <a href="https://tinyhomeboutiques.guestybookings.com/en" target="_blank" rel="noopener" class="property-card reveal reveal-delay-2" style="text-decoration:none;color:inherit;">
+        <a href="https://tinyhomeboutiques.com" target="_blank" rel="noopener" class="property-card reveal reveal-delay-2" style="text-decoration:none;color:inherit;">
           <div class="property-img">
             <img src="https://assets.guesty.com/image/upload/v1717175062/nabyoxbcxslggzpqfgap.jpg" alt="Pikes Peak BrightStar Boutique at dusk" loading="lazy" style="object-position: left center;">
             <span class="region-tag">Colorado</span>
@@ -2369,7 +2345,7 @@ section { padding: 8rem 2rem; }
               <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
               Woodland Park, CO
             </span>
-            <p class="property-caption">Modern boutique tiny home with Pikes Peak backdrop, outdoor firepit, full kitchen, and cozy loft bedroom. Sleeps 2-4. Walking distance to Woodland Park restaurants and shops. Near Pikes Peak Highway, Mueller State Park, and Manitou Springs. Superhost managed. Book direct and save 15%.</p>
+            <p class="property-caption">Where mountain charm meets modern comfort. The BrightStar shines with its inviting design and stunning Pikes Peak backdrop.</p>
             <div class="property-features">
               <span class="property-feature">1 BD / 1 BA</span>
               <span class="property-feature">Sleeps 4</span>
@@ -2386,7 +2362,7 @@ section { padding: 8rem 2rem; }
         </a>
 
         <!-- Property 4 -->
-        <a href="https://tinyhomeboutiques.guestybookings.com/en" target="_blank" rel="noopener" class="property-card reveal reveal-delay-3" style="text-decoration:none;color:inherit;">
+        <a href="https://tinyhomeboutiques.com" target="_blank" rel="noopener" class="property-card reveal reveal-delay-3" style="text-decoration:none;color:inherit;">
           <div class="property-img">
             <img src="https://assets.guesty.com/image/upload/v1740535469/production/66565be6ef6be074587681ab/cfebb3cgyspwmdvn1sfb.jpg" alt="Pikes Peak Heaven's Retreat with sunset views" loading="lazy" style="object-position: right 40%;">
             <span class="region-tag">Colorado</span>
@@ -2401,7 +2377,7 @@ section { padding: 8rem 2rem; }
               <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
               Woodland Park, CO
             </span>
-            <p class="property-caption">Elevated mountain sanctuary with sunset views of Pikes Peak. Boutique tiny home with indoor fireplace, designer furnishings, and private deck. 1 bedroom, sleeps 2-3. Ideal for a peaceful Colorado mountain retreat near Colorado Springs. Airbnb Superhost, 4.9+ rating, 500+ five-star reviews. Book direct — tinyhomeboutiques.com.</p>
+            <p class="property-caption">Truly heavenly. Watch the sunset paint Pikes Peak in gold and pink every evening from this elevated mountain sanctuary.</p>
             <div class="property-features">
               <span class="property-feature">1 BD / 1 BA</span>
               <span class="property-feature">Sleeps 4</span>
@@ -2463,7 +2439,7 @@ section { padding: 8rem 2rem; }
       </div>
     </div>
     <div style="text-align:center;margin-top:2.5rem;" class="reveal">
-      <a href="https://tinyhomeboutiques.guestybookings.com/en" class="btn-primary" target="_blank" rel="noopener">Book Your Stay</a>
+      <a href="https://tinyhomeboutiques.com" class="btn-primary" target="_blank" rel="noopener">Book Your Stay</a>
     </div>
   </div>
 </section>
@@ -2519,19 +2495,19 @@ section { padding: 8rem 2rem; }
     </div>
     <div class="price-compare-box reveal">
       <div class="price-card airbnb">
-        <div class="price-card-label">Third-Party Platforms</div>
-        <div class="price-amount">Base Rate + Fees</div>
-        <div class="per-night">up to 15% in hidden fees</div>
+        <div class="price-card-label">Airbnb Price</div>
+        <div class="price-amount">$215</div>
+        <div class="per-night">per night</div>
       </div>
       <div class="price-arrow">&#8594;</div>
       <div class="price-card direct">
-        <div class="price-card-label">Book Direct</div>
-        <div class="price-amount">Lowest Rate</div>
-        <div class="per-night">no service fees, ever</div>
+        <div class="price-card-label">Book Direct Price</div>
+        <div class="price-amount">$185</div>
+        <div class="per-night">per night</div>
       </div>
       <div class="price-savings">
-        <div class="save-amount">You Save Up to 15%</div>
-        <div class="save-detail">No middlemen. No hidden fees. Just the best price, direct from us.</div>
+        <div class="save-amount">You Save $30/night</div>
+        <div class="save-detail">On a 5-night stay, that's $150 back in your pocket</div>
       </div>
     </div>
   </div>
@@ -2859,7 +2835,7 @@ section { padding: 8rem 2rem; }
   <div class="cta-inner reveal">
     <h2>Ready for Your Next Escape?</h2>
     <p>Book direct and save up to 15%. No service fees, no middlemen &mdash; just unforgettable stays.</p>
-    <a href="https://tinyhomeboutiques.guestybookings.com/en" class="cta-btn" target="_blank" rel="noopener">
+    <a href="https://tinyhomeboutiques.com" class="cta-btn" target="_blank" rel="noopener">
       Find Your Perfect Stay
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
     </a>
@@ -2871,8 +2847,12 @@ section { padding: 8rem 2rem; }
   <div class="email-capture-inner reveal">
     <h2>Get Our Free Pikes Peak Visitor Guide</h2>
     <p>Insider tips on the best hikes, restaurants, and hidden gems around Woodland Park. Delivered straight to your inbox.</p>
-    <form class="email-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Sent!'; this.querySelector('input').value='';">
-      <input type="email" placeholder="Enter your email address" required>
+    <form class="email-form" action="https://formsubmit.co/DLJrealty@yahoo.com" method="POST">
+      <input type="hidden" name="_subject" value="New Pikes Peak Guide Request">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://tinyhomeboutiques.com?guide=sent">
+      <input type="hidden" name="_template" value="table">
+      <input type="email" name="email" placeholder="Enter your email address" required>
       <button type="submit">Get the Guide</button>
     </form>
   </div>
@@ -2929,7 +2909,7 @@ section { padding: 8rem 2rem; }
       <ul class="footer-links">
         <li><a href="#about">About Us</a></li>
         <li><a href="#reviews">Guest Reviews</a></li>
-        <li><a href="https://tinyhomeboutiques.guestybookings.com/en" target="_blank" rel="noopener">Book Direct</a></li>
+        <li><a href="https://tinyhomeboutiques.com" target="_blank" rel="noopener">Book Direct</a></li>
         <li><a href="https://instagram.com/dlj_properties" target="_blank" rel="noopener">@dlj_properties</a></li>
         <li><a href="mailto:DLJrealty@yahoo.com">DLJrealty@yahoo.com</a></li>
       </ul>
@@ -2948,9 +2928,10 @@ section { padding: 8rem 2rem; }
 <!-- Sticky Mobile Booking Bar -->
 <div class="mobile-book-bar">
   <div class="mobile-price">
-    <strong>Save 15% Direct</strong>
+    From
+    <strong>$149/night</strong>
   </div>
-  <a href="https://tinyhomeboutiques.guestybookings.com/en" class="btn-mobile-book" target="_blank" rel="noopener">Book Now</a>
+  <a href="https://tinyhomeboutiques.com" class="btn-mobile-book" target="_blank" rel="noopener">Book Now</a>
 </div>
 
 <script>
@@ -3131,7 +3112,7 @@ section { padding: 8rem 2rem; }
   document.querySelectorAll('.property-card, .property-featured').forEach(function(card) {
     if (card.tagName.toLowerCase() !== 'a') {
       card.addEventListener('click', function() {
-        window.open('https://tinyhomeboutiques.guestybookings.com/en', '_blank');
+        window.open('https://tinyhomeboutiques.com', '_blank');
       });
     }
   });
