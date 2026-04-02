@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CRNRCW6F55"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CRNRCW6F55');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Automate Guesty with AI in 60 Seconds | Tiny Home Boutiques</title>
+<meta name="description" content="Connect AI agents to your Guesty account with one command. 39 tools for reservations, messaging, pricing, and more. Free and open source.">
+<link rel="canonical" href="https://tinyhomeboutiques.com/blog/automate-guesty-with-ai-60-seconds.html">
+<meta property="og:title" content="How to Automate Your Guesty Property Management with AI in 60 Seconds">
+<meta property="og:description" content="Connect AI agents to your Guesty account with one command. 39 tools for reservations, messaging, pricing, and more.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tinyhomeboutiques.com/blog/automate-guesty-with-ai-60-seconds.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0a0e1a;
+  --navy-mid: #0f1629;
+  --gold: #c9a84c;
+  --gold-light: #e2c872;
+  --white: #ffffff;
+  --white-95: rgba(255,255,255,0.95);
+  --white-90: rgba(255,255,255,0.9);
+  --white-80: rgba(255,255,255,0.8);
+  --white-70: rgba(255,255,255,0.7);
+  --white-60: rgba(255,255,255,0.6);
+  --white-50: rgba(255,255,255,0.5);
+  --white-30: rgba(255,255,255,0.3);
+  --white-15: rgba(255,255,255,0.15);
+  --white-05: rgba(255,255,255,0.05);
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-elegant: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, sans-serif;
+  --transition: 0.3s ease;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-body); background: var(--navy); color: var(--white); line-height: 1.7; }
+a { color: var(--gold); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--gold-light); }
+
+/* Nav */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1.2rem 3rem; display: flex; align-items: center; justify-content: space-between; background: rgba(10,14,26,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--white-05); }
+.nav-logo { display: flex; flex-direction: column; }
+.nav-logo .brand-name { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--white); }
+.nav-logo .brand-sub { font-family: var(--font-elegant); font-size: 0.7rem; font-weight: 300; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); }
+.nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+.nav-links a { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--white-70); transition: color var(--transition); }
+.nav-links a:hover { color: var(--white); }
+.btn-book-nav { background: var(--gold); color: var(--navy) !important; padding: 0.6rem 1.5rem; font-size: 0.7rem !important; font-weight: 700 !important; letter-spacing: 0.1em; border-radius: 0; }
+.btn-book-nav:hover { background: var(--white); color: var(--navy) !important; }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--white); margin: 5px 0; transition: var(--transition); }
+
+/* Article Hero */
+.article-hero { position: relative; height: 50vh; min-height: 350px; display: flex; align-items: flex-end; overflow: hidden; }
+.article-hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.article-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--navy) 0%, rgba(10,14,26,0.4) 50%, rgba(10,14,26,0.2) 100%); }
+.article-hero-content { position: relative; z-index: 2; padding: 3rem; max-width: 900px; }
+.article-hero-content .back-link { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; display: inline-block; }
+.article-hero-content h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; line-height: 1.2; margin-bottom: 0.75rem; }
+.article-hero-content .article-meta { font-family: var(--font-elegant); font-size: 1.1rem; color: var(--gold); font-style: italic; }
+
+/* Article Content */
+.article-body { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+.article-body h2 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; margin: 2.5rem 0 1rem; color: var(--white-95); }
+.article-body h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 2rem 0 0.75rem; color: var(--gold); }
+.article-body p { margin-bottom: 1.25rem; color: var(--white-80); font-size: 1rem; line-height: 1.8; }
+.article-body ul, .article-body ol { margin: 0 0 1.25rem 1.5rem; color: var(--white-80); }
+.article-body li { margin-bottom: 0.5rem; line-height: 1.7; }
+.article-body strong { color: var(--white-95); }
+.article-body em { color: var(--white-70); }
+.article-body table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+.article-body th { text-align: left; padding: 0.75rem 1rem; background: var(--navy-mid); color: var(--gold); border-bottom: 1px solid var(--white-15); font-weight: 600; }
+.article-body td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--white-05); color: var(--white-70); }
+.article-body hr { border: none; border-top: 1px solid var(--white-05); margin: 2.5rem 0; }
+.article-body a { color: var(--gold); text-decoration: underline; text-underline-offset: 2px; }
+.article-body a:hover { color: var(--gold-light); }
+
+/* CTA Box */
+.cta-box { background: var(--navy-mid); border: 1px solid var(--gold); padding: 2.5rem; margin: 3rem 0; text-align: center; }
+.cta-box h3 { font-family: var(--font-display); font-size: 1.4rem; color: var(--white); margin-bottom: 0.75rem; }
+.cta-box p { color: var(--white-70); margin-bottom: 1.25rem; }
+.cta-box .btn-cta { display: inline-block; background: var(--gold); color: var(--navy); padding: 0.85rem 2.5rem; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: background var(--transition); }
+.cta-box .btn-cta:hover { background: var(--white); color: var(--navy); }
+
+/* Footer */
+.article-footer { text-align: center; padding: 3rem 2rem; border-top: 1px solid var(--white-05); }
+.article-footer p { color: var(--white-50); font-size: 0.85rem; }
+.article-footer a { color: var(--gold); text-decoration: none; }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--navy); flex-direction: column; justify-content: center; gap: 2rem; }
+  .nav-links.active { display: flex; }
+  .nav-toggle { display: block; }
+  .article-hero { min-height: 280px; }
+  .article-hero-content { padding: 2rem 1.5rem; }
+  .article-body { padding: 2rem 1.25rem 3rem; }
+  .article-body table { font-size: 0.8rem; }
+  .article-body th, .article-body td { padding: 0.5rem; }
+  .cta-box { padding: 1.75rem; }
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Automate Your Guesty Property Management with AI in 60 Seconds","description":"Connect AI agents to your Guesty account with one command. 39 tools for reservations, messaging, pricing, and more.","datePublished":"2026-04-02","author":{"@type":"Organization","name":"DLJ Properties"}}
+</script>
+</head>
+<body>
+<nav><div class="nav-inner"><a href="/" class="nav-logo">Tiny Home Boutiques</a><div class="nav-links"><a href="/#properties">Properties</a><a href="/blog.html">Blog</a><a href="/#about">About</a><a href="/#contact">Contact</a></div></div></nav>
+
+<article class="blog-article">
+<header class="article-header">
+<div class="article-meta">April 2, 2026 &middot; 6 min read</div>
+<h1>How to Automate Your Guesty Property Management with AI in 60 Seconds</h1>
+<p class="article-subtitle">Stop toggling between 15 tabs. Let AI handle your Guesty operations while you focus on growing your portfolio.</p>
+</header>
+
+<div class="article-body">
+
+<h2>The Problem Every Guesty Host Knows</h2>
+<p>You bought Guesty to streamline your property management. And it does &mdash; Guesty is powerful. But powerful also means complex. You still spend hours every week switching between reservations, calendars, messaging, and financials. Manually responding to guest messages at 2 AM. Pulling financial reports across multiple properties.</p>
+<p>What if you could do all of that with a single command?</p>
+
+<h2>Introducing Guesty Copilot &mdash; The First AI-Powered Guesty Integration</h2>
+<p>Guesty Copilot is an open-source MCP server that connects your Guesty account to AI assistants like Claude, Cursor, and Windsurf. It gives your AI <strong>39 tools</strong> to manage every aspect of your property business. One command to install. Zero configuration headaches. Free forever.</p>
+
+<h2>Setup: Literally 60 Seconds</h2>
+<p><strong>Step 1:</strong> Open your terminal and run:</p>
+<pre><code>npx guesty-mcp-server</code></pre>
+<p><strong>Step 2:</strong> Add your Guesty API credentials (Client ID and Secret from your Guesty dashboard under Marketplace &gt; API).</p>
+<p><strong>Step 3:</strong> Connect to your AI assistant by adding the config to your Claude Code settings. That's it.</p>
+
+<h2>What Can You Actually Do With It?</h2>
+
+<h3>Guest Messaging</h3>
+<ul>
+<li>Reply to all unread guest messages with personalized check-in instructions</li>
+<li>Send thank-you messages to every guest who checked out this week</li>
+<li>AI reads conversation context and responds appropriately</li>
+</ul>
+
+<h3>Reservations &amp; Calendar</h3>
+<ul>
+<li>Show all reservations for next week across all properties</li>
+<li>Block calendar dates for maintenance</li>
+<li>Find all check-ins tomorrow and send pre-arrival messages</li>
+</ul>
+
+<h3>Pricing &amp; Financials</h3>
+<ul>
+<li>Pull revenue summaries across all properties</li>
+<li>Update nightly rates instantly</li>
+<li>Generate owner statements for any period</li>
+</ul>
+
+<h3>Reviews &amp; Operations</h3>
+<ul>
+<li>Respond to all 5-star reviews with personalized messages</li>
+<li>Create cleaning tasks automatically</li>
+<li>Track pending tasks for the week</li>
+</ul>
+
+<h2>All 39 Tools at Your Fingertips</h2>
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;">
+<tr style="border-bottom:2px solid #333;"><th style="text-align:left;padding:8px;">Category</th><th style="text-align:left;padding:8px;">Tools</th><th style="text-align:left;padding:8px;">What They Do</th></tr>
+<tr style="border-bottom:1px solid #ddd;"><td style="padding:8px;">Reservations &amp; Guests</td><td style="padding:8px;">8</td><td style="padding:8px;">Search, create, update bookings. Access guest profiles.</td></tr>
+<tr style="border-bottom:1px solid #ddd;"><td style="padding:8px;">Listings &amp; Calendar</td><td style="padding:8px;">8</td><td style="padding:8px;">Manage listings, calendars, availability, photos.</td></tr>
+<tr style="border-bottom:1px solid #ddd;"><td style="padding:8px;">Messaging</td><td style="padding:8px;">2</td><td style="padding:8px;">Read conversations and send guest messages.</td></tr>
+<tr style="border-bottom:1px solid #ddd;"><td style="padding:8px;">Financials &amp; Pricing</td><td style="padding:8px;">8</td><td style="padding:8px;">Revenue reports, pricing updates, owner statements.</td></tr>
+<tr style="border-bottom:1px solid #ddd;"><td style="padding:8px;">Operations</td><td style="padding:8px;">6</td><td style="padding:8px;">Task management, reviews, channel management.</td></tr>
+<tr><td style="padding:8px;">Automation</td><td style="padding:8px;">7</td><td style="padding:8px;">Webhooks, custom fields, analytics.</td></tr>
+</table>
+
+<h2>Why Open Source Matters</h2>
+<p>Guesty Copilot is MIT-licensed: free forever, you own your data, runs on your machine, transparent code, and community-driven with hundreds of npm downloads in the first week.</p>
+
+<h2>Who Is This For?</h2>
+<ul>
+<li>Guesty Professional/Business plan users who want to automate operations</li>
+<li>Multi-property managers drowning in manual tasks</li>
+<li>Tech-savvy hosts who already use Claude, Cursor, or similar AI tools</li>
+<li>Property management companies looking for an edge</li>
+</ul>
+
+<h2>Get Started Now</h2>
+<pre><code>npx guesty-mcp-server</code></pre>
+<p>Or visit <a href="https://guestycopilot.com">guestycopilot.com</a> for the full setup guide, managed hosting pricing, and beta access. <strong>Beta pricing: 50% off for life for the first 10 customers.</strong></p>
+
+</div>
+</article>
+
+<section class="cta-section" style="text-align:center;padding:3rem 1rem;background:#0a0e1a;color:#fff;">
+<h2 style="margin-bottom:1rem;">Ready to automate your Guesty operations?</h2>
+<p style="margin-bottom:1.5rem;color:#94a3b8;">One command. 39 tools. Free forever.</p>
+<a href="https://guestycopilot.com" style="display:inline-block;padding:14px 32px;background:#2563eb;color:#fff;text-decoration:none;border-radius:8px;font-weight:600;">Get Started Free</a>
+</section>
+
+<footer style="text-align:center;padding:2rem;color:#64748b;font-size:0.85rem;">
+<p>&copy; 2026 Tiny Home Boutiques by DLJ Properties. <a href="/" style="color:#94a3b8;">Home</a> &middot; <a href="/blog.html" style="color:#94a3b8;">Blog</a></p>
+</footer>
+</body>
+</html>
