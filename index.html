@@ -1453,11 +1453,13 @@
   (function() {
     var visited = localStorage.getItem('thb_visited');
     if (visited) {
-      var banner = document.getElementById('returnBanner');
-      if (banner) {
-        banner.classList.add('visible');
-        document.body.classList.add('has-banner');
-      }
+      setTimeout(function() {
+        var banner = document.getElementById('returnBanner');
+        if (banner) {
+          banner.classList.add('visible');
+          document.body.classList.add('has-banner');
+        }
+      }, 30000); // 30 second delay
     }
     localStorage.setItem('thb_visited', '1');
   })();
