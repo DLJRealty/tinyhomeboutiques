@@ -64,7 +64,7 @@ footer a{color:#64748b}
 <div class="hero">
 <div class="hero-overlay"></div>
 <div class="hero-content">
-<span class="badge">Airbnb Superhost &bull; 4.9 Stars</span>
+<span class="badge">Airbnb Superhost</span>
 <h1>Pikes Peak Boutique Retreat</h1>
 <p>Experience the Pikes Peak region like a local. Our Boutique Retreat combines mountain charm with modern comfort — featur...</p>
 </div>
@@ -128,11 +128,11 @@ footer a{color:#64748b}
     <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;margin-bottom:1.5rem;line-height:1.5;">Enter your email and get an exclusive offer on your first direct booking. No Airbnb fees.</p>
     <form id="popupForm" onsubmit="submitPopup(event)" style="display:flex;flex-direction:column;gap:0.75rem;">
       <input type="email" id="popupEmail" placeholder="Enter your email" required style="padding:12px 16px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.05);color:#fff;font-size:1rem;outline:none;">
-      <button type="submit" style="padding:14px;border-radius:8px;border:none;background:#c9a84c;color:#0a0e1a;font-weight:700;font-size:1rem;cursor:pointer;">Get My 10% Discount</button>
+      <button type="submit" style="padding:14px;border-radius:8px;border:none;background:#c9a84c;color:#0a0e1a;font-weight:700;font-size:1rem;cursor:pointer;">Claim Your Offer</button>
     </form>
     <div id="popupSuccess" style="display:none;">
       <p style="color:#c9a84c;font-weight:600;font-size:1.1rem;margin-bottom:0.5rem;">You're in!</p>
-      <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">Your promo code: <strong style="color:#fff;font-size:1.2rem;">COMEBACK10</strong></p>
+      <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">Check your email — your exclusive offer is on the way.</p>
       <p style="color:rgba(255,255,255,0.5);font-size:0.8rem;margin-top:0.5rem;">Use it at checkout on <a href="https://tinyhomeboutiques.guestybookings.com/" style="color:#c9a84c;" target="_blank">our booking page</a></p>
     </div>
     <p style="color:rgba(255,255,255,0.3);font-size:0.7rem;margin-top:1rem;">No spam. Just your discount code + occasional deals.</p>
@@ -141,7 +141,7 @@ footer a{color:#64748b}
 <script>
 function showPopup(){if(localStorage.getItem('thb_popup_seen'))return;document.getElementById('emailPopup').style.display='flex';}
 function closePopup(){document.getElementById('emailPopup').style.display='none';localStorage.setItem('thb_popup_seen','1');}
-function submitPopup(e){e.preventDefault();var email=document.getElementById('popupEmail').value;fetch('https://formsubmit.co/ajax/DLJrealty@yahoo.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({email:email,_subject:'Website Popup Signup - 10% Discount',source:'tinyhomeboutiques.com popup',_template:'table'})}).then(function(){}).catch(function(){});document.getElementById('popupForm').style.display='none';document.getElementById('popupSuccess').style.display='block';localStorage.setItem('thb_popup_seen','1');}
+function submitPopup(e){e.preventDefault();var email=document.getElementById('popupEmail').value;fetch('https://formsubmit.co/ajax/DLJrealty@yahoo.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({email:email,_subject:'Website Popup Signup',source:'tinyhomeboutiques.com popup',_template:'table'})}).then(function(){}).catch(function(){});document.getElementById('popupForm').style.display='none';document.getElementById('popupSuccess').style.display='block';localStorage.setItem('thb_popup_seen','1');}
 setTimeout(showPopup,8000);var scrollTriggered=false;window.addEventListener('scroll',function(){if(!scrollTriggered&&window.scrollY>document.body.scrollHeight*0.3){scrollTriggered=true;showPopup();}});
 </script>
 </html>
