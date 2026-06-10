@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- PREVIEW / CONCEPT — homepage rebuild example for Owner review. Not the live site. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Tiny Home Boutiques — Homepage Rebuild Preview</title>
+<style>
+  :root{
+    --ink:#0d1117; --ink-2:#141b24; --snow:#f6f8fb; --mist:#aeb9c7;
+    --peak:#e9b872; --peak-2:#f3d6a0; --pine:#1f6f54; --glass:rgba(255,255,255,.06);
+    --line:rgba(255,255,255,.10); --radius:20px;
+    --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font);background:var(--ink);color:var(--snow);overflow-x:hidden;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .serif{font-family:var(--serif)}
+
+  /* preview ribbon */
+  .ribbon{position:fixed;top:0;left:0;right:0;z-index:120;background:linear-gradient(90deg,var(--peak),var(--peak-2));color:#3a2a10;
+    font-size:12.5px;font-weight:700;letter-spacing:.04em;text-align:center;padding:6px 12px}
+
+  /* nav */
+  nav{position:fixed;top:30px;left:0;right:0;z-index:100;transition:.4s}
+  nav.solid{background:rgba(13,17,23,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1180px;margin:0 auto}
+  .brand{font-family:var(--serif);font-size:24px;font-weight:600;letter-spacing:.02em}
+  .brand span{color:var(--peak)}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .nav-links a{font-size:14.5px;color:var(--mist);transition:.25s}
+  .nav-links a:hover{color:var(--snow)}
+  .btn{display:inline-block;background:linear-gradient(135deg,var(--peak),var(--peak-2));color:#3a2a10;font-weight:700;
+    padding:12px 24px;border-radius:100px;font-size:14.5px;transition:.3s;border:none;cursor:pointer}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(233,184,114,.32)}
+  .btn-ghost{background:transparent;border:1px solid var(--line);color:var(--snow)}
+  .btn-ghost:hover{border-color:var(--peak);box-shadow:none}
+  @media(max-width:820px){.nav-links a:not(.btn){display:none}}
+
+  /* hero */
+  .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+  .hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .hero::after{content:'';position:absolute;inset:0;z-index:1;
+    background:linear-gradient(180deg,rgba(13,17,23,.55) 0%,rgba(13,17,23,.35) 40%,rgba(13,17,23,.92) 100%)}
+  .hero-inner{position:relative;z-index:2;padding-top:90px}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--peak-2);border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(8px);
+    padding:8px 16px;border-radius:100px;margin-bottom:26px}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--pine);box-shadow:0 0 0 4px rgba(31,111,84,.25)}
+  h1.hero-h{font-family:var(--serif);font-weight:600;font-size:clamp(44px,7vw,86px);line-height:1.02;letter-spacing:-.01em;max-width:14ch}
+  h1.hero-h em{color:var(--peak);font-style:italic}
+  .hero-sub{font-size:clamp(17px,2vw,20px);color:#d6deea;max-width:50ch;margin:24px 0 34px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero-note{font-size:13.5px;color:var(--mist)}
+
+  /* trust strip */
+  .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink-2)}
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:34px 0;text-align:center}
+  .trust-grid .n{font-family:var(--serif);font-size:clamp(30px,4vw,46px);color:var(--peak);font-weight:600;line-height:1}
+  .trust-grid .l{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--mist);margin-top:8px}
+  @media(max-width:680px){.trust-grid{grid-template-columns:repeat(2,1fr);gap:26px 10px}}
+
+  /* sections */
+  section.pad{padding:clamp(70px,10vw,120px) 0}
+  .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--peak);margin-bottom:14px}
+  .sec-h{font-family:var(--serif);font-size:clamp(32px,5vw,54px);font-weight:600;line-height:1.05;max-width:18ch}
+  .sec-lead{color:var(--mist);max-width:56ch;margin-top:16px;font-size:17px}
+  .reveal{opacity:0;transform:translateY(30px);transition:.8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* property grid w/ 3D tilt */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
+  @media(max-width:920px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+  .card{position:relative;border-radius:var(--radius);background:linear-gradient(160deg,var(--ink-2),#0f151d);
+    border:1px solid var(--line);overflow:hidden;transform-style:preserve-3d;transition:transform .2s ease,box-shadow .3s;
+    will-change:transform}
+  .card:hover{box-shadow:0 30px 60px rgba(0,0,0,.5)}
+  .card-media{position:relative;height:210px;overflow:hidden;transform:translateZ(28px)}
+  .card-media video,.card-media .ph{width:100%;height:100%;object-fit:cover;display:block}
+  .card-media .ph{display:flex;align-items:center;justify-content:center;
+    background:radial-gradient(120% 120% at 30% 0%,#21303f,#0d141c);color:var(--peak-2);font-family:var(--serif);font-size:21px}
+  .badge{position:absolute;top:12px;left:12px;z-index:3;font-size:11.5px;font-weight:700;letter-spacing:.05em;
+    text-transform:uppercase;padding:5px 11px;border-radius:100px;backdrop-filter:blur(8px)}
+  .b-tiny{background:rgba(31,111,84,.85);color:#eafff6}
+  .b-home{background:rgba(233,184,114,.9);color:#3a2a10}
+  .b-new{position:absolute;top:12px;right:12px;z-index:3;font-size:11px;font-weight:700;letter-spacing:.05em;
+    background:rgba(13,17,23,.7);border:1px solid var(--line);color:var(--peak-2);padding:5px 10px;border-radius:100px;backdrop-filter:blur(8px)}
+  .card-body{padding:22px;transform:translateZ(14px)}
+  .card-name{font-family:var(--serif);font-size:22px;font-weight:600;line-height:1.12}
+  .card-meta{display:flex;align-items:center;gap:8px;margin:9px 0 4px;font-size:14px;color:var(--mist);flex-wrap:wrap}
+  .stars{color:var(--peak)}
+  .feat{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 18px}
+  .feat span{font-size:12px;color:#cdd6e2;background:var(--glass);border:1px solid var(--line);padding:4px 10px;border-radius:8px}
+  .card-cta{display:flex;justify-content:space-between;align-items:center}
+  .card-cta a.book{font-size:14px;font-weight:700;color:var(--peak)}
+  .card-cta a.book:hover{color:var(--peak-2)}
+
+  /* video tours */
+  .tours{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:50px}
+  @media(max-width:760px){.tours{grid-template-columns:1fr}}
+  .tour{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#000;position:relative}
+  .tour video{width:100%;display:block;aspect-ratio:16/10;object-fit:cover}
+  .tour .cap{position:absolute;bottom:0;left:0;right:0;padding:18px;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent);
+    font-family:var(--serif);font-size:20px;z-index:2}
+
+  /* why direct */
+  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
+  @media(max-width:820px){.why{grid-template-columns:1fr}}
+  .why-card{padding:30px;border-radius:var(--radius);background:var(--glass);border:1px solid var(--line)}
+  .why-card .ic{width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--peak),var(--peak-2));color:#3a2a10;font-size:22px;margin-bottom:16px}
+  .why-card h3{font-size:19px;margin-bottom:8px}
+  .why-card p{color:var(--mist);font-size:15px}
+
+  /* cta band */
+  .band{position:relative;text-align:center;padding:clamp(70px,9vw,110px) 0;overflow:hidden}
+  .band::before{content:'';position:absolute;inset:0;background:
+    radial-gradient(60% 90% at 50% 0%,rgba(233,184,114,.18),transparent),
+    radial-gradient(50% 70% at 80% 100%,rgba(31,111,84,.22),transparent),var(--ink-2)}
+  .band>*{position:relative;z-index:2}
+  .band h2{font-family:var(--serif);font-size:clamp(34px,5vw,58px);font-weight:600;max-width:16ch;margin:0 auto 18px}
+
+  /* sticky mobile book bar */
+  .stickybar{position:fixed;left:0;right:0;bottom:0;z-index:90;display:none;justify-content:space-between;align-items:center;
+    padding:12px 18px;background:rgba(13,17,23,.92);backdrop-filter:blur(14px);border-top:1px solid var(--line)}
+  .stickybar .sp{font-size:13px;color:var(--mist)}
+  @media(max-width:820px){.stickybar{display:flex}}
+
+  footer{border-top:1px solid var(--line);padding:50px 0 90px;color:var(--mist);font-size:14px}
+  .foot-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+  footer a:hover{color:var(--snow)}
+</style>
+</head>
+<body>
+<div class="ribbon">PREVIEW · Homepage rebuild concept for Owner review — not the live site</div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <div class="brand">Tiny Home <span>Boutiques</span></div>
+    <div class="nav-links">
+      <a href="#homes">The Homes</a>
+      <a href="#tours">Video Tours</a>
+      <a href="#why">Why Book Direct</a>
+      <a class="btn" href="https://tinyhomeboutiques.com" target="_blank" rel="noopener">Book Direct</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <video autoplay muted loop playsinline preload="metadata"
+    poster="https://assets.guesty.com/image/upload/v1717175057/oeww6lzi0ghir4comnsf.jpg">
+    <source src="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.0-promo-videos/master-all-units-promo.mp4" type="video/mp4">
+  </video>
+  <div class="wrap hero-inner">
+    <span class="eyebrow"><span class="dot"></span>Woodland Park, Colorado · 8,500 ft</span>
+    <h1 class="hero-h">Wake up to <em>Pikes Peak.</em></h1>
+    <p class="hero-sub">A collection of design-forward boutique tiny homes and mountain homes with direct views of America's most famous summit. Hands-on hosting, five-star stays, and the best rate when you book direct.</p>
+    <div class="hero-cta">
+      <a class="btn" href="https://tinyhomeboutiques.com" target="_blank" rel="noopener">Book Direct &amp; Save</a>
+      <a class="btn btn-ghost" href="#tours">Watch the Tours</a>
+      <span class="hero-note">Airbnb Superhost · Guest Favorite</span>
+    </div>
+  </div>
+</header>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div><div class="n" data-count="1000" data-suffix="+">0</div><div class="l">Five-Star Reviews</div></div>
+      <div><div class="n">4.9<span style="font-size:.6em">★</span></div><div class="l">Average Rating</div></div>
+      <div><div class="n" data-count="6">0</div><div class="l">Colorado Homes</div></div>
+      <div><div class="n">24/7</div><div class="l">Real-Person Hosting</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- HOMES -->
+<section class="pad" id="homes">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">The Collection</div>
+      <h2 class="sec-h serif">Six Colorado stays, each with a direct Pikes Peak view.</h2>
+      <p class="sec-lead">Five boutique tiny homes and one full-size mountain home in Woodland Park — minutes from Pikes Peak, Garden of the Gods, and downtown Colorado Springs.</p>
+    </div>
+    <div class="grid">
+
+      <!-- Unit Y -->
+      <article class="card reveal" data-tilt>
+        <div class="card-media">
+          <span class="badge b-tiny">Tiny Home</span>
+          <video autoplay muted loop playsinline preload="none"
+            poster="https://assets.guesty.com/image/upload/v1717175057/zpb8ngefkmdpcuxgy5m7.jpg">
+            <source src="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.0-promo-videos/unit-y-promo.mp4" type="video/mp4"></video>
+        </div>
+        <div class="card-body">
+          <div class="card-name serif">Boutique TinyHome w/Direct View of PikesPeak!</div>
+          <div class="card-meta"><span class="stars">★ 4.91</span> · 293 reviews · <span style="color:var(--peak-2)">Most-reviewed</span></div>
+          <div class="feat"><span>Direct Pikes Peak view</span><span>Gas fire pit</span><span>Design-forward</span></div>
+          <div class="card-cta"><a class="book" href="https://tinyhomeboutiques.com" target="_blank" rel="noopener">Book Direct →</a></div>
+        </div>
+      </article>
+
+      <!-- Unit W -->
+      <article class="card reveal" data-tilt>
+        <div class="card-media">
+          <span class="badge b-tiny">Tiny Home</span>
+          <video autoplay muted loop playsinline preload="none"
+            poster="https://assets.guesty.com/image/upload/v1717175062/dpt7aszjbmlx0jcqvodp.jpg">
+            <source src="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.0-promo-videos/unit-w-promo.mp4" type="video/mp4"></video>
+        </div>
+        <div class="card-body">
+          <div class="card-name serif">Pikes Peak Boutique Retreat</div>
+          <div class="card-meta"><span class="stars">★ 4.96</span> · 139 reviews · <span style="color:var(--peak-2)">Highest-rated</span></div>
+          <div class="feat"><span>Direct Pikes Peak view</span><span>Gas fire pit</span><span>Boutique interior</span></div>
+          <div class="card-cta"><a class="book" href="https://tinyhomeboutiques.com" target="_blank" rel="noopener">Book Direct →</a></div>
+        </div>
+      </article>
+
+      <!-- Unit X -->
+      <article class="card reveal" data-tilt>
+        <div class="card-media">
+          <span class="badge b-tiny">Tiny Home</span>
+          <video autoplay muted loop playsinline preload="none"
+            poster="https://assets.guesty.com/image/upload/v1717175094/xxv63qgecggbqlf4cwru.jpg">
+            <source src="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.0-promo-videos/unit-x-promo.mp4" type="video/mp4"></video>
+        </div>
+        <div class="card-body">
+          <div class="card-name serif">Pikes Peak BrightStar Boutique</div>
+          <div class="card-meta"><span class="stars">★ 4.91</span> · 140 reviews</div>
+          <div class="feat"><span>Direct Pikes Peak view</span><span>Gas fire pit</span><span>Bright &amp; airy</span></div>
+          <div class="card-cta"><a class="book" href="https://tinyhomeboutiques.com" target="_blank" rel="noopener">Book Direct →</a></div>
+        </div>
+      </article>
+
+      <!-- Unit 33 -->
+      <article class="card reveal" data-tilt>
+        <div class="card-media">
+          <span class="badge b-tiny">Tiny Home</span>
+          <video autoplay muted loop playsinline preload="none"
+            poster="https://assets.guesty.com/image/upload/v1717175094/zle7h1leqzhxycmsousy.jpg">
+            <source src="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.0-promo-videos/unit-33-promo.mp4" type="video/mp4"></video>
+        </div>
+        <div class="card-body">
+          <div class="card-name serif">Pikes Peak Heaven's Retreat</div>
+          <div class="card-meta"><span class="stars">★ 4.79</span> · 85 reviews</div>
+          <div class="feat"><span>Direct Pikes Peak view</span><span>Gas fire pit</span><span>Cozy &amp; private</span></div>
+          <div class="card-cta"><a class="book" href="https://tinyhomeboutiques.com" target="_blank" rel="noopener">Book Direct →</a></div>
+        </div>
+      </article>
+
+      <!-- Mountain Retreat (HOME) -->
+      <article class="card reveal" data-tilt>
+        <div class="card-media">
+          <span class="badge b-home">Full Home</span>
+          <div class="ph">Pikes Peak Mountain Retreat</div>
+        </div>
+        <div class="card-body">
+          <div class="card-name serif">Pikes Peak Mountain Retreat</div>
+          <div class="card-meta">A full home — more room to spread out, same direct Pikes Peak view.</div>
+          <div class="feat"><span>Direct Pikes Peak view</span><span>Gas fire pit</span><span>Full-size home</span></div>
+          <div class="card-cta"><a class="book" href="https://tinyhomeboutiques.com" target="_blank" rel="noopener">Book Direct →</a></div>
+        </div>
+      </article>
+
+      <!-- Unit 35 (TINY, newest, 0 reviews) -->
+      <article class="card reveal" data-tilt>
+        <div class="card-media">
+          <span class="badge b-tiny">Tiny Home</span>
+          <span class="b-new">Newest stay</span>
+          <div class="ph">Woodland Peak Tiny Lodge</div>
+        </div>
+        <div class="card-body">
+          <div class="card-name serif">Woodland Peak Tiny Lodge</div>
+          <div class="card-meta">Our newest boutique tiny home in Woodland Park — be among the first to stay.</div>
+          <div class="feat"><span>Woodland Park</span><span>Design-forward</span><span>Book direct</span></div>
+          <div class="card-cta"><a class="book" href="https://tinyhomeboutiques.com" target="_blank" rel="noopener">Book Direct →</a></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO TOURS -->
+<section class="pad" id="tours" style="background:var(--ink-2)">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">See Before You Book</div>
+      <h2 class="sec-h serif">Walk through every stay.</h2>
+      <p class="sec-lead">Real tours of our boutique tiny homes — no stock photos, no surprises.</p>
+    </div>
+    <div class="tours">
+      <div class="tour reveal"><video muted loop playsinline controls preload="none"
+        poster="https://assets.guesty.com/image/upload/v1717175057/zpb8ngefkmdpcuxgy5m7.jpg">
+        <source src="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.0-promo-videos/unit-y-promo.mp4" type="video/mp4"></video>
+        <div class="cap">Boutique TinyHome w/Direct View of PikesPeak!</div></div>
+      <div class="tour reveal"><video muted loop playsinline controls preload="none"
+        poster="https://assets.guesty.com/image/upload/v1717175062/dpt7aszjbmlx0jcqvodp.jpg">
+        <source src="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.0-promo-videos/unit-w-promo.mp4" type="video/mp4"></video>
+        <div class="cap">Pikes Peak Boutique Retreat</div></div>
+      <div class="tour reveal"><video muted loop playsinline controls preload="none"
+        poster="https://assets.guesty.com/image/upload/v1717175094/xxv63qgecggbqlf4cwru.jpg">
+        <source src="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.0-promo-videos/unit-x-promo.mp4" type="video/mp4"></video>
+        <div class="cap">Pikes Peak BrightStar Boutique</div></div>
+      <div class="tour reveal"><video muted loop playsinline controls preload="none"
+        poster="https://assets.guesty.com/image/upload/v1717175094/zle7h1leqzhxycmsousy.jpg">
+        <source src="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.0-promo-videos/unit-33-promo.mp4" type="video/mp4"></video>
+        <div class="cap">Pikes Peak Heaven's Retreat</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY DIRECT -->
+<section class="pad" id="why">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">Book Direct</div>
+      <h2 class="sec-h serif">The best stay starts here — not on a third-party app.</h2>
+    </div>
+    <div class="why">
+      <div class="why-card reveal"><div class="ic">$</div><h3>Best rate, guaranteed</h3><p>Book direct at tinyhomeboutiques.com and skip the extra third-party service fees — more stay for your money.</p></div>
+      <div class="why-card reveal"><div class="ic">✦</div><h3>Superhost-managed</h3><p>Airbnb Superhost and Guest Favorite, with 1,000+ five-star reviews across the collection. Hands-on, hospitality-first.</p></div>
+      <div class="why-card reveal"><div class="ic">⤳</div><h3>Real people, 24/7</h3><p>Fast, human responses before and during your stay — the kind of care that earns five stars, not a ticket number.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="band">
+  <div class="wrap">
+    <h2 class="serif">Your Pikes Peak stay is one click away.</h2>
+    <p style="color:var(--mist);max-width:48ch;margin:0 auto 28px">Check dates and book direct — best rate, real hosts, unforgettable views.</p>
+    <a class="btn" href="https://tinyhomeboutiques.com" target="_blank" rel="noopener" style="font-size:16px;padding:15px 34px">Book Direct →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div><div class="brand" style="font-size:21px">Tiny Home <span style="color:var(--peak)">Boutiques</span></div>
+      <p style="margin-top:8px;max-width:34ch">Boutique tiny homes &amp; mountain homes with direct Pikes Peak views. Woodland Park, Colorado.</p></div>
+    <div>Book direct: <a href="https://tinyhomeboutiques.com" style="color:var(--peak)">tinyhomeboutiques.com</a><br>Airbnb Superhost · Guest Favorite</div>
+  </div>
+</footer>
+
+<div class="stickybar">
+  <span class="sp">Best rate when you book direct</span>
+  <a class="btn" href="https://tinyhomeboutiques.com" target="_blank" rel="noopener">Book Direct</a>
+</div>
+
+<script>
+  // nav solidify
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>{nav.classList.toggle('solid',scrollY>40)});
+  // scroll reveal
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.14});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  // count-up
+  const cio=new IntersectionObserver((es)=>es.forEach(e=>{
+    if(!e.isIntersecting)return;const el=e.target;const t=+el.dataset.count;const sfx=el.dataset.suffix||'';
+    let n=0;const step=Math.max(1,Math.round(t/45));const tick=()=>{n+=step;if(n>=t){el.textContent=t.toLocaleString()+sfx}else{el.textContent=n.toLocaleString()+sfx;requestAnimationFrame(tick)}};tick();cio.unobserve(el);
+  }),{threshold:.5});
+  document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+  // 3D pointer tilt
+  document.querySelectorAll('[data-tilt]').forEach(card=>{
+    const max=7;
+    card.addEventListener('pointermove',ev=>{
+      const r=card.getBoundingClientRect();const px=(ev.clientX-r.left)/r.width-.5;const py=(ev.clientY-r.top)/r.height-.5;
+      card.style.transform=`perspective(900px) rotateX(${(-py*max).toFixed(2)}deg) rotateY(${(px*max).toFixed(2)}deg) translateY(-4px)`;
+    });
+    card.addEventListener('pointerleave',()=>{card.style.transform='';});
+  });
+</script>
+</body>
+</html>
