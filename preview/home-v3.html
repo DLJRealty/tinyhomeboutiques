@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- PREVIEW BUILD v3 "Alpine Noir" — 2026-06-10 — NOT PUBLIC. noindex enforced. -->
+<!-- SSOT: all names/ratings/counts verbatim from units.json v2.4.x (256 SSOT). 658 = on-website review sum (pending CEO scope pick A/B). -->
+<meta name="robots" content="noindex,nofollow">
+<title>Tiny Home Boutiques — Boutique Stays Under Pikes Peak | Woodland Park, Colorado</title>
+<meta name="description" content="Six boutique stays in Woodland Park, Colorado. Book direct with the family that built them. 4.9 average across 658 guest reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#ECE7DC; --ink-dim:#A8A296; --bg:#0B0E0C; --bg-2:#11150F; --bg-3:#161B14;
+  --gold:#D9A441; --gold-soft:#E8C27A; --pine:#2E4034; --line:rgba(236,231,220,.12);
+  --disp:'Fraunces',serif; --ui:'Outfit',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);font-weight:300;line-height:1.6;overflow-x:hidden}
+::selection{background:var(--gold);color:#0B0E0C}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+/* grain overlay */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:3;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E")}
+
+/* preview ribbon */
+.ribbon{position:fixed;top:0;left:0;right:0;z-index:200;background:#7a1f1f;color:#fff;text-align:center;
+  font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;padding:6px 10px;font-weight:600}
+
+/* scroll progress */
+.progress{position:fixed;top:27px;left:0;height:2px;background:var(--gold);z-index:199;width:0%}
+
+/* nav */
+nav{position:fixed;top:27px;left:0;right:0;z-index:150;display:flex;align-items:center;justify-content:space-between;
+  padding:18px clamp(20px,4vw,56px);transition:background .4s,backdrop-filter .4s}
+nav.scrolled{background:rgba(11,14,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--disp);font-weight:600;font-size:1.15rem;letter-spacing:.02em}
+.logo em{color:var(--gold);font-style:normal}
+.nav-links{display:flex;gap:34px;align-items:center;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase}
+.nav-links a{opacity:.75;transition:opacity .25s,color .25s}
+.nav-links a:hover{opacity:1;color:var(--gold-soft)}
+.btn{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:12px 28px;border-radius:999px;
+  font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;transition:all .3s;cursor:pointer;background:transparent}
+.btn:hover{background:var(--gold);color:#0B0E0C;transform:translateY(-1px)}
+.btn.solid{background:var(--gold);color:#0B0E0C}
+.btn.solid:hover{background:var(--gold-soft);border-color:var(--gold-soft)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero video,.hero .hero-fallback{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.85)}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(11,14,12,.55) 0%,rgba(11,14,12,.15) 38%,rgba(11,14,12,.65) 72%,var(--bg) 100%)}
+.hero-inner{position:relative;z-index:2;padding:0 clamp(20px,4vw,56px) clamp(56px,9vh,110px);width:100%}
+.hero-kicker{font-size:.78rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:22px;opacity:0;animation:rise 1s .3s forwards}
+.hero h1{font-family:var(--disp);font-weight:300;font-size:clamp(2.9rem,8.4vw,7.4rem);line-height:1.02;letter-spacing:-.01em;max-width:13ch;opacity:0;animation:rise 1.1s .5s forwards}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--gold-soft)}
+.hero-sub{margin-top:26px;max-width:46ch;color:var(--ink-dim);font-size:clamp(1rem,1.4vw,1.18rem);opacity:0;animation:rise 1s .8s forwards}
+.hero-ctas{display:flex;gap:16px;margin-top:38px;flex-wrap:wrap;opacity:0;animation:rise 1s 1s forwards}
+.hero-proof{margin-top:30px;font-size:.85rem;color:var(--ink-dim);letter-spacing:.04em;opacity:0;animation:rise 1s 1.15s forwards}
+.hero-proof b{color:var(--ink);font-weight:600}
+.hero-proof .star{color:var(--gold)}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.scroll-cue{position:absolute;right:clamp(20px,4vw,56px);bottom:clamp(56px,9vh,110px);z-index:2;writing-mode:vertical-rl;
+  font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-dim);display:flex;align-items:center;gap:14px}
+.scroll-cue::after{content:"";width:1px;height:54px;background:linear-gradient(var(--gold),transparent);animation:drip 2.2s infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* marquee */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;overflow:hidden;background:var(--bg-2)}
+.marquee-track{display:flex;gap:0;white-space:nowrap;animation:scrollx 36s linear infinite;width:max-content}
+.marquee span{font-family:var(--disp);font-size:1rem;font-style:italic;color:var(--ink-dim);padding:0 28px;letter-spacing:.06em}
+.marquee b{color:var(--gold);font-weight:400}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:clamp(72px,11vh,130px) clamp(20px,4vw,56px)}
+.sec-kicker{font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.sec-title{font-family:var(--disp);font-weight:300;font-size:clamp(2rem,4.6vw,3.8rem);line-height:1.08;max-width:20ch}
+.sec-title em{font-style:italic;color:var(--gold-soft)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:54px}
+.stat{background:var(--bg);padding:38px 28px}
+.stat b{font-family:var(--disp);font-weight:300;font-size:clamp(2.4rem,4.5vw,3.6rem);color:var(--ink);display:block;line-height:1}
+.stat b .star{color:var(--gold);font-size:.6em;vertical-align:.35em}
+.stat span{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim);display:block;margin-top:12px}
+
+/* homes rail */
+.rail-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.rail-hint{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim)}
+.rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:46px 4px 18px;
+  -webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--pine) transparent}
+.rail::-webkit-scrollbar{height:4px}
+.rail::-webkit-scrollbar-thumb{background:var(--pine);border-radius:4px}
+.home-card{scroll-snap-align:start;flex:0 0 clamp(300px,30vw,400px);background:var(--bg-2);border:1px solid var(--line);
+  border-radius:18px;overflow:hidden;transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .45s;display:flex;flex-direction:column}
+.home-card:hover{transform:translateY(-8px);border-color:rgba(217,164,65,.5)}
+.home-media{position:relative;aspect-ratio:4/3;overflow:hidden}
+.home-media img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.home-card:hover .home-media img{transform:scale(1.06)}
+.home-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(11,14,12,.55))}
+.badge{position:absolute;top:14px;left:14px;z-index:2;background:rgba(11,14,12,.72);backdrop-filter:blur(6px);
+  border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft)}
+.home-body{padding:24px 24px 26px;display:flex;flex-direction:column;gap:12px;flex:1}
+.home-name{font-family:var(--disp);font-weight:400;font-size:1.32rem;line-height:1.2}
+.home-meta{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--ink-dim);flex-wrap:wrap}
+.home-meta .star{color:var(--gold)}
+.home-meta b{color:var(--ink);font-weight:600}
+.chip{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-dim)}
+.home-actions{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px}
+.home-actions .btn{padding:10px 22px;font-size:.72rem}
+.tiny-link{font-size:.74rem;color:var(--ink-dim);border-bottom:1px solid var(--line);padding-bottom:2px;transition:color .25s,border-color .25s}
+.tiny-link:hover{color:var(--gold-soft);border-color:var(--gold-soft)}
+
+/* parallax experience */
+.exp{position:relative;min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;
+  background-image:url('https://assets.guesty.com/image/upload/v1717175057/oeww6lzi0ghir4comnsf.jpg');
+  background-size:cover;background-position:center;background-attachment:fixed}
+.exp::before{content:"";position:absolute;inset:0;background:rgba(11,14,12,.68)}
+.exp-inner{position:relative;z-index:2;max-width:760px;padding:0 24px}
+.exp-inner p{margin-top:24px;color:var(--ink-dim);font-size:clamp(1rem,1.5vw,1.16rem);max-width:56ch;margin-left:auto;margin-right:auto}
+@media (hover:none){.exp{background-attachment:scroll}}
+
+/* direct strip */
+.direct{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.direct-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px;margin-top:50px}
+.d-item h3{font-family:var(--disp);font-weight:400;font-size:1.25rem;margin-bottom:10px}
+.d-item h3 span{color:var(--gold);font-style:italic;margin-right:10px}
+.d-item p{color:var(--ink-dim);font-size:.95rem}
+
+/* reviews */
+.review-pills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:50px}
+.pill{border:1px solid var(--line);border-radius:14px;padding:22px 24px;background:var(--bg-2);display:flex;gap:18px;align-items:center}
+.pill b{font-family:var(--disp);font-weight:400;font-size:1.7rem;color:var(--ink);white-space:nowrap}
+.pill b .star{color:var(--gold);font-size:.65em;vertical-align:.3em}
+.pill span{font-size:.82rem;color:var(--ink-dim);line-height:1.45}
+
+/* faq */
+.faq{max-width:860px}
+details{border-bottom:1px solid var(--line);padding:26px 0}
+summary{cursor:pointer;font-family:var(--disp);font-weight:400;font-size:1.2rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--ui);color:var(--gold);font-size:1.4rem;font-weight:300;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:16px;color:var(--ink-dim);max-width:64ch}
+
+/* final cta */
+.final{text-align:center;position:relative}
+.final .glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:640px;height:640px;border-radius:50%;
+  background:radial-gradient(circle,rgba(217,164,65,.13),transparent 65%);pointer-events:none}
+.final h2{font-family:var(--disp);font-weight:300;font-size:clamp(2.4rem,6vw,5rem);line-height:1.05;position:relative}
+.final h2 em{font-style:italic;color:var(--gold-soft)}
+.final p{color:var(--ink-dim);margin:22px auto 38px;max-width:48ch;position:relative}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:54px clamp(20px,4vw,56px) 110px;display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;background:var(--bg-2)}
+footer .cols{display:flex;gap:64px;flex-wrap:wrap}
+footer h4{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:16px}
+footer a{display:block;font-size:.88rem;color:var(--ink-dim);margin-bottom:10px;transition:color .25s}
+footer a:hover{color:var(--gold-soft)}
+.fineprint{font-size:.72rem;color:var(--ink-dim);opacity:.7;width:100%;margin-top:8px}
+
+/* sticky mobile book bar */
+.bookbar{position:fixed;bottom:0;left:0;right:0;z-index:160;background:rgba(11,14,12,.92);backdrop-filter:blur(14px);
+  border-top:1px solid var(--line);padding:12px 18px;display:none;align-items:center;justify-content:space-between;gap:14px}
+.bookbar .bb-txt{font-size:.78rem;color:var(--ink-dim)}
+.bookbar .bb-txt b{color:var(--ink);display:block;font-size:.9rem}
+@media(max-width:860px){
+  .nav-links{display:none}
+  .bookbar{display:flex}
+  .scroll-cue{display:none}
+}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  .hero h1,.hero-kicker,.hero-sub,.hero-ctas,.hero-proof{opacity:1}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "Tiny Home Boutiques",
+  "url": "https://tinyhomeboutiques.com/",
+  "address": {"@type": "PostalAddress", "addressLocality": "Woodland Park", "addressRegion": "CO", "postalCode": "80863", "addressCountry": "US"},
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "658", "bestRating": "5"}
+}
+</script>
+</head>
+<body>
+
+<div class="ribbon">Preview build — internal review only — not public</div>
+<div class="progress" id="progress"></div>
+
+<nav id="nav">
+  <a class="logo" href="#top">Tiny Home <em>Boutiques</em></a>
+  <div class="nav-links">
+    <a href="#homes">The Homes</a>
+    <a href="#experience">The Experience</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn solid" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Book Direct</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <video autoplay muted loop playsinline poster="https://assets.guesty.com/image/upload/v1717175094/xxv63qgecggbqlf4cwru.jpg">
+    <source src="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.0-promo-videos/master-all-units-promo.mp4" type="video/mp4">
+  </video>
+  <img class="hero-fallback" src="https://assets.guesty.com/image/upload/v1717175094/xxv63qgecggbqlf4cwru.jpg" alt="Boutique tiny home beneath Pikes Peak at dusk, Woodland Park, Colorado" style="display:none">
+  <div class="hero-inner">
+    <p class="hero-kicker">Woodland Park &middot; Colorado &middot; 80863</p>
+    <h1>Wake up <em>under</em> Pikes Peak.</h1>
+    <p class="hero-sub">Six boutique stays in the mountains above Colorado Springs — hosted by the family behind them. Book direct, arrive to firelight.</p>
+    <div class="hero-ctas">
+      <a class="btn solid" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Check Availability</a>
+      <a class="btn" href="#homes">Explore the Homes</a>
+    </div>
+    <p class="hero-proof"><span class="star">&#9733;</span> <b>4.9 average</b> across <b>658 guest reviews</b> on Airbnb</p>
+  </div>
+  <span class="scroll-cue">Scroll</span>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Woodland Park <b>&#10038;</b></span><span>Pikes Peak views <b>&#10038;</b></span><span>Gas fire pits <b>&#10038;</b></span><span>Starry mountain nights <b>&#10038;</b></span><span>Book direct <b>&#10038;</b></span><span>Family hosted <b>&#10038;</b></span>
+    <span>Woodland Park <b>&#10038;</b></span><span>Pikes Peak views <b>&#10038;</b></span><span>Gas fire pits <b>&#10038;</b></span><span>Starry mountain nights <b>&#10038;</b></span><span>Book direct <b>&#10038;</b></span><span>Family hosted <b>&#10038;</b></span>
+  </div>
+</div>
+
+<section>
+  <p class="sec-kicker reveal">The Collection</p>
+  <h2 class="sec-title reveal">Boutique stays, <em>not</em> spare rooms.</h2>
+  <div class="stats">
+    <div class="stat reveal"><b>6</b><span>Boutique homes</span></div>
+    <div class="stat reveal d1"><b>658</b><span>Guest reviews</span></div>
+    <div class="stat reveal d2"><b>4.9<span class="star">&#9733;</span></b><span>Average rating</span></div>
+    <div class="stat reveal d3"><b>1</b><span>Family of hosts</span></div>
+  </div>
+</section>
+
+<section id="homes" style="padding-top:0">
+  <div class="rail-head">
+    <div>
+      <p class="sec-kicker reveal">The Homes</p>
+      <h2 class="sec-title reveal">Pick your <em>peak</em>.</h2>
+    </div>
+    <p class="rail-hint reveal">Drag &rarr; to explore</p>
+  </div>
+  <div class="rail">
+
+    <article class="home-card">
+      <div class="home-media">
+        <span class="badge">Most reviewed</span>
+        <img src="https://assets.guesty.com/image/upload/v1717175094/xxv63qgecggbqlf4cwru.jpg" alt="Boutique TinyHome with direct view of Pikes Peak — exterior at golden hour" loading="lazy">
+      </div>
+      <div class="home-body">
+        <h3 class="home-name">Boutique TinyHome w/Direct View of PikesPeak!</h3>
+        <p class="home-meta"><span class="star">&#9733;</span><b>4.91</b> &middot; 293 reviews &middot; Sleeps 4</p>
+        <p class="home-meta"><span class="chip">Direct Pikes Peak view</span><span class="chip">Gas fire pit</span></p>
+        <div class="home-actions">
+          <a class="btn solid" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Book Direct</a>
+          <a class="tiny-link" href="https://www.airbnb.com/rooms/704910906218647468" target="_blank" rel="noopener">Reviews on Airbnb &#8599;</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="home-card">
+      <div class="home-media">
+        <span class="badge">Highest rated</span>
+        <img src="https://assets.guesty.com/image/upload/v1717175057/oeww6lzi0ghir4comnsf.jpg" alt="Pikes Peak Boutique Retreat — mountain tiny home exterior" loading="lazy">
+      </div>
+      <div class="home-body">
+        <h3 class="home-name">Pikes Peak Boutique Retreat</h3>
+        <p class="home-meta"><span class="star">&#9733;</span><b>4.96</b> &middot; 139 reviews &middot; Sleeps 6</p>
+        <p class="home-meta"><span class="chip">Gas fire pit</span></p>
+        <div class="home-actions">
+          <a class="btn solid" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Book Direct</a>
+          <a class="tiny-link" href="https://www.airbnb.com/rooms/1157418080674498913" target="_blank" rel="noopener">Reviews on Airbnb &#8599;</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="home-card">
+      <div class="home-media">
+        <img src="https://assets.guesty.com/image/upload/v1717175062/nabyoxbcxslggzpqfgap.jpg" alt="Pikes Peak BrightStar Boutique — tiny home under Colorado sky" loading="lazy">
+      </div>
+      <div class="home-body">
+        <h3 class="home-name">Pikes Peak BrightStar Boutique</h3>
+        <p class="home-meta"><span class="star">&#9733;</span><b>4.91</b> &middot; 140 reviews &middot; Sleeps 4</p>
+        <p class="home-meta"><span class="chip">Gas fire pit</span></p>
+        <div class="home-actions">
+          <a class="btn solid" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Book Direct</a>
+          <a class="tiny-link" href="https://www.airbnb.com/rooms/1157510573326154721" target="_blank" rel="noopener">Reviews on Airbnb &#8599;</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="home-card">
+      <div class="home-media">
+        <img src="https://assets.guesty.com/image/upload/v1740535469/production/66565be6ef6be074587681ab/cfebb3cgyspwmdvn1sfb.jpg" alt="Pikes Peak Heaven's Retreat — boutique stay in Woodland Park" loading="lazy">
+      </div>
+      <div class="home-body">
+        <h3 class="home-name">Pikes Peak Heaven's Retreat</h3>
+        <p class="home-meta"><span class="star">&#9733;</span><b>4.79</b> &middot; 85 reviews &middot; Sleeps 4</p>
+        <p class="home-meta"><span class="chip">Gas fire pit</span></p>
+        <div class="home-actions">
+          <a class="btn solid" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Book Direct</a>
+          <a class="tiny-link" href="https://www.airbnb.com/rooms/1305846645531224893" target="_blank" rel="noopener">Reviews on Airbnb &#8599;</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="home-card">
+      <div class="home-media">
+        <span class="badge">Newly opened</span>
+        <img src="https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/b77b2fc2-2c38-4d-qZK37" alt="Pikes Peak Mountain Retreat — panoramic mountain views, Woodland Park" loading="lazy">
+      </div>
+      <div class="home-body">
+        <h3 class="home-name">Pikes Peak Mountain Retreat</h3>
+        <p class="home-meta">Sleeps 6</p>
+        <p class="home-meta"><span class="chip">Panoramic mountain views</span><span class="chip">Gas fire pit</span></p>
+        <div class="home-actions">
+          <a class="btn solid" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Book Direct</a>
+          <a class="tiny-link" href="https://www.airbnb.com/rooms/1622793080695903669" target="_blank" rel="noopener">View on Airbnb &#8599;</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="home-card">
+      <div class="home-media">
+        <span class="badge">Newly opened</span>
+        <img src="https://assets.guesty.com/image/upload/v1778900094/production/66565be6ef6be074587681ab/sxz72zlv6mr6q4wjajih.jpg" alt="Woodland Peak Tiny Lodge — newly opened boutique lodge" loading="lazy">
+      </div>
+      <div class="home-body">
+        <h3 class="home-name">Woodland Peak Tiny Lodge</h3>
+        <p class="home-meta">Sleeps 6</p>
+        <div class="home-actions">
+          <a class="btn solid" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Book Direct</a>
+          <a class="tiny-link" href="https://www.airbnb.com/rooms/1679043422816384080" target="_blank" rel="noopener">View on Airbnb &#8599;</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="exp" id="experience">
+  <div class="exp-inner">
+    <p class="sec-kicker reveal">The Experience</p>
+    <h2 class="sec-title reveal" style="max-width:none">Firelight, thin air, <em>a billion stars.</em></h2>
+    <p class="reveal d1">Evenings end around the gas fire pit. Mornings start with first light on America's Mountain. In between: Woodland Park's trails, wildlife, and the quiet you came for — fifteen minutes above the Colorado Springs attractions, a world away from them.</p>
+  </div>
+</section>
+
+<section class="direct">
+  <p class="sec-kicker reveal">Book Direct</p>
+  <h2 class="sec-title reveal">Straight from <em>the source.</em></h2>
+  <div class="direct-grid">
+    <div class="d-item reveal"><h3><span>01</span>Live calendar</h3><p>Our booking engine shows real-time availability across all six homes — the same calendar we manage ourselves.</p></div>
+    <div class="d-item reveal d1"><h3><span>02</span>Secure checkout</h3><p>Reserve in minutes through our secure direct-booking engine, no account required.</p></div>
+    <div class="d-item reveal d2"><h3><span>03</span>Hosted by owners</h3><p>You're booking directly with the family behind these homes — and we treat every stay that way.</p></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <p class="sec-kicker reveal">Reviews</p>
+  <h2 class="sec-title reveal">658 reviews. <em>Real guests, real stays.</em></h2>
+  <div class="review-pills">
+    <div class="pill reveal"><b><span class="star">&#9733;</span>4.91</b><span>293 reviews — Boutique TinyHome w/Direct View of PikesPeak!</span></div>
+    <div class="pill reveal d1"><b><span class="star">&#9733;</span>4.96</b><span>139 reviews — Pikes Peak Boutique Retreat</span></div>
+    <div class="pill reveal d2"><b><span class="star">&#9733;</span>4.91</b><span>140 reviews — Pikes Peak BrightStar Boutique</span></div>
+    <div class="pill reveal d3"><b><span class="star">&#9733;</span>4.79</b><span>85 reviews — Pikes Peak Heaven's Retreat</span></div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <p class="sec-kicker reveal">Questions</p>
+  <h2 class="sec-title reveal">Before you <em>pack.</em></h2>
+  <div class="faq" style="margin-top:34px">
+    <details class="reveal"><summary>Where are the homes?</summary><p>All six homes are in Woodland Park, Colorado (80863) — in the mountains about 30 minutes from Colorado Springs, near Garden of the Gods, Cheyenne Mountain Zoo, and the Pikes Peak region's trails.</p></details>
+    <details class="reveal"><summary>How do I book?</summary><p>Directly through our secure booking engine — it shows live availability for every home. Each home is also listed on Airbnb, where you can read all of our guest reviews.</p></details>
+    <details class="reveal"><summary>Can I bring my pet?</summary><p>To maintain the pristine, allergen-free environment our guests love, our homes are pet-free. If you're traveling with pets, message us before booking and we'll try to point you in the right direction.</p></details>
+    <details class="reveal"><summary>Do the homes really have Pikes Peak views?</summary><p>Our Boutique TinyHome has a direct view of Pikes Peak, and several homes have panoramic mountain views — many guests say waking up to the mountain is the highlight of their stay.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="glow"></div>
+  <h2 class="reveal">The mountain is <em>waiting.</em></h2>
+  <p class="reveal d1">Check live availability across all six Woodland Park homes and book your stay directly with us.</p>
+  <a class="btn solid reveal d2" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener" style="font-size:.9rem;padding:16px 42px">Check Availability</a>
+</section>
+
+<footer>
+  <div>
+    <a class="logo" href="#top">Tiny Home <em>Boutiques</em></a>
+    <p style="color:var(--ink-dim);font-size:.85rem;margin-top:14px;max-width:30ch">Boutique stays under Pikes Peak.<br>Woodland Park, Colorado.</p>
+  </div>
+  <div class="cols">
+    <div>
+      <h4>The Homes</h4>
+      <a href="/unit-y-boutique-tinyhome.html">Boutique TinyHome w/Direct View of PikesPeak!</a>
+      <a href="/unit-w-pikes-peak-retreat.html">Pikes Peak Boutique Retreat</a>
+      <a href="/unit-x-brightstar-boutique.html">Pikes Peak BrightStar Boutique</a>
+      <a href="/unit-33-heavens-retreat.html">Pikes Peak Heaven's Retreat</a>
+      <a href="/mountain-retreat-woodland-park.html">Pikes Peak Mountain Retreat</a>
+      <a href="/woodland-peak-tiny-lodge.html">Woodland Peak Tiny Lodge</a>
+    </div>
+    <div>
+      <h4>Plan</h4>
+      <a href="/things-to-do-woodland-park-colorado.html">Things to do in Woodland Park</a>
+      <a href="/colorado-stargazing-getaways.html">Stargazing getaways</a>
+      <a href="/guide.html">Area guide</a>
+      <a href="/blog.html">Journal</a>
+    </div>
+    <div>
+      <h4>Fine Print</h4>
+      <a href="/cancellation-policy.html">Cancellation policy</a>
+      <a href="/privacy-policy.html">Privacy policy</a>
+      <a href="/terms-of-service.html">Terms of service</a>
+    </div>
+  </div>
+  <p class="fineprint">&copy; 2026 Tiny Home Boutiques &middot; Woodland Park, Colorado &middot; Ratings and review counts shown as published on Airbnb.</p>
+</footer>
+
+<div class="bookbar">
+  <p class="bb-txt"><b>Woodland Park, CO</b><span class="star" style="color:var(--gold)">&#9733;</span> 4.9 &middot; 658 reviews</p>
+  <a class="btn solid" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener" style="padding:11px 24px;font-size:.74rem">Book Direct</a>
+</div>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav'),prog=document.getElementById('progress');
+  function onScroll(){
+    var y=window.scrollY,h=document.documentElement.scrollHeight-window.innerHeight;
+    nav.classList.toggle('scrolled',y>40);
+    prog.style.width=(h>0?(y/h*100):0)+'%';
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.14});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+
+  // video fallback: if video can't play, show the still
+  var v=document.querySelector('.hero video'),f=document.querySelector('.hero-fallback');
+  if(v){v.addEventListener('error',function(){v.style.display='none';f.style.display='block';},true);
+    var p=v.play&&v.play();if(p&&p.catch){p.catch(function(){f.style.display='block';});}}
+})();
+</script>
+</body>
+</html>
