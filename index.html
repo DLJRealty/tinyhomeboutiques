@@ -530,6 +530,98 @@
   </div>
 </div>
 
+<!-- ============================================================
+     BRAND FILM — additive CO sizzle reel. Placement+copy+poster: Marketing.
+     Hosting+optimization+embed: CTO. Video/poster self-hosted as GitHub Release
+     assets (tag v1.1-sizzle-2026), matching the v1.0-promo-videos pattern.
+     CSS vars scoped to .brand-film (no global :root collision). Lazy: preload=none + poster.
+     ============================================================ -->
+<style>
+  .brand-film{
+    --gold:#c9a84c; --bf-dark:#0a0e1a; --bf-dark2:#0f1629;
+    --bf-white-90:rgba(255,255,255,.9); --bf-white-60:rgba(255,255,255,.6);
+    position:relative;color:var(--bf-white-90);
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(18,129,118,.10), transparent 60%),
+      linear-gradient(180deg, var(--bf-dark) 0%, var(--bf-dark2) 100%);
+    padding:clamp(64px,9vw,120px) clamp(20px,5vw,80px);
+    overflow:hidden;
+  }
+  .brand-film .bf-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,6vw,84px);align-items:center}
+  .brand-film .bf-copy .eyebrow{font-family:'DM Sans',sans-serif;font-weight:600;font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;display:flex;align-items:center;gap:14px}
+  .brand-film .bf-copy .eyebrow::before{content:"";width:42px;height:1px;background:var(--gold);display:inline-block}
+  .brand-film .bf-copy h2{font-family:'Playfair Display',serif;font-weight:600;line-height:1.08;font-size:clamp(2.1rem,4.4vw,3.4rem);color:#fff;margin-bottom:24px;letter-spacing:-.01em}
+  .brand-film .bf-copy h2 em{font-style:italic;color:var(--gold)}
+  .brand-film .bf-copy p{font-family:'DM Sans',sans-serif;font-size:1.075rem;color:var(--bf-white-60);max-width:30em;margin-bottom:34px;font-weight:300}
+  .brand-film .bf-cta{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#0a0e1a;font-family:'DM Sans',sans-serif;font-weight:600;font-size:.98rem;letter-spacing:.02em;padding:15px 30px;border-radius:2px;text-decoration:none;transition:transform .25s, box-shadow .25s;box-shadow:0 10px 30px rgba(201,168,76,.22)}
+  .brand-film .bf-cta:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(201,168,76,.34)}
+  .brand-film .bf-sub{margin-top:18px;font-family:'DM Sans',sans-serif;font-size:.82rem;color:var(--bf-white-60)}
+  .brand-film .bf-stage{display:flex;justify-content:center;margin:0}
+  .brand-film .phone{position:relative;width:min(330px,82vw);aspect-ratio:9/16;border-radius:34px;padding:11px;background:linear-gradient(160deg,#20242e,#0c0f17);box-shadow:0 40px 90px -30px rgba(0,0,0,.85), 0 0 0 1px rgba(201,168,76,.20), inset 0 0 0 1px rgba(255,255,255,.04)}
+  .brand-film .phone::before{content:"";position:absolute;top:20px;left:50%;transform:translateX(-50%);width:54px;height:5px;border-radius:3px;background:rgba(255,255,255,.16);z-index:3}
+  .brand-film .phone .bf-screen{position:relative;width:100%;height:100%;border-radius:24px;overflow:hidden;background:#000 url("https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.1-sizzle-2026/co-tinyhomes-sizzle-poster.jpg") center/cover no-repeat}
+  .brand-film .phone .bf-screen video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:transparent;opacity:1;transition:opacity .45s ease}
+  .brand-film .phone .bf-screen video.bf-masking{opacity:0}
+  .brand-film .phone .bf-screen video.bf-masking.bf-show{opacity:1}
+  @media (max-width:860px){
+    .brand-film .bf-inner{grid-template-columns:1fr;gap:40px}
+    .brand-film .bf-copy{order:2;text-align:center}
+    .brand-film .bf-copy .eyebrow{justify-content:center}
+    .brand-film .bf-copy p{margin-left:auto;margin-right:auto}
+    .brand-film .bf-stage{order:1}
+  }
+</style>
+<section class="brand-film" id="brand-film" aria-label="Property film">
+  <div class="bf-inner">
+    <div class="bf-copy">
+      <div class="eyebrow">See the stay</div>
+      <h2>Wake up to <em>Pikes Peak</em>.</h2>
+      <p>Forty-four seconds inside our design-forward boutique tiny homes in Woodland Park, Colorado &mdash; where every window frames the mountain. Then book your stay, direct with us.</p>
+      <a class="bf-cta" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Book Direct &nbsp;&rarr;</a>
+      <div class="bf-sub">Direct rates &middot; Superhost &middot; Pikes Peak views</div>
+    </div>
+    <figure class="bf-stage">
+      <div class="phone">
+        <div class="bf-screen">
+          <video class="bf-video" poster="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.1-sizzle-2026/co-tinyhomes-sizzle-poster.jpg" muted loop playsinline controls preload="none" data-src="https://github.com/DLJRealty/tinyhomeboutiques/releases/download/v1.1-sizzle-2026/co-tinyhomes-sizzle-web.mp4"></video>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+<script>
+/* brand-film: lazy-load + intentional autoplay, NEVER a black box. Three guards:
+   (1) poster lives on .bf-screen behind the video (attr + CSS bg) -> non-playing states show poster;
+   (2) autoplay is gated on 'canplay' -> poster shows THROUGH network buffering (video stays hidden);
+   (3) the source reel opens on a ~0.6s fade-from-black -> we keep the video transparent over the
+       poster until playback passes the intro, and RE-MASK that intro on every loop. Scoped. */
+(function(){
+  var v=document.querySelector('.brand-film .bf-video');
+  if(!v) return;
+  var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var INTRO=0.6;            /* seconds of black fade-in at the head of the reel (measured) */
+  var armed=false;
+  function play(){ var p=v.play(); if(p&&p.catch){ p.catch(function(){ /* blocked -> poster stays */ }); } }
+  function arm(){
+    if(armed) return; armed=true;
+    if(v.dataset.src){ v.src=v.dataset.src; }      /* swap in real source only when near viewport */
+    if(reduce) return;                             /* reduced-motion: no autoplay, poster + tap-to-play */
+    v.classList.add('bf-masking');                 /* hide video over poster until past the intro */
+    v.addEventListener('timeupdate',function(){    /* reveal after intro; re-mask intro each loop */
+      if(v.currentTime>=INTRO) v.classList.add('bf-show'); else v.classList.remove('bf-show');
+    });
+    v.preload='auto'; v.load();                    /* begin buffering; poster visible while it loads */
+    v.addEventListener('canplay',play,{once:true});/* only play once a frame is ready -> no buffer-black */
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ arm(); io.disconnect(); } });
+    },{rootMargin:'300px 0px'});
+    io.observe(v);
+  } else { arm(); }                                /* no-IO fallback: load immediately */
+})();
+</script>
+
 <!-- Properties -->
 <section class="properties" id="properties">
   <div class="section-container">
