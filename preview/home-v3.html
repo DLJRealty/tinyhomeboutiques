@@ -99,7 +99,8 @@ nav.show{opacity:1;transform:none;pointer-events:auto;background:rgba(18,21,15,.
 .layer-copy{position:absolute;left:clamp(20px,5vw,72px);bottom:clamp(48px,9vh,100px);z-index:2;
   max-width:min(760px,calc(100% - clamp(40px,10vw,144px)));padding:clamp(22px,3vw,38px) clamp(24px,3.4vw,44px);
   background:rgba(12,15,10,.34);backdrop-filter:blur(20px) saturate(1.3);-webkit-backdrop-filter:blur(20px) saturate(1.3);
-  border:1px solid rgba(233,229,219,.12);border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+  border:1px solid rgba(233,229,219,.12);border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.35);
+  transition:opacity .15s linear}
 .layer-eyebrow{font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:var(--brass-soft);margin-bottom:14px}
 .layer-name{font-family:var(--disp);font-weight:300;font-size:clamp(1.9rem,4.6vw,4rem);line-height:1.08;max-width:18ch}
 .layer-meta{margin-top:16px;font-size:clamp(.86rem,1.3vw,1rem);color:var(--bone-dim);letter-spacing:.05em}
@@ -413,13 +414,15 @@ footer .small a:hover{color:var(--brass-soft)}
   }
 
   function reelScroll(){
-    if(reduced){layers.forEach(function(L,i){L.style.opacity=1;loadLayer(i);var v=L.querySelector('video');if(v)v.play().catch(function(){});});return;}
+    if(reduced){layers.forEach(function(L,i){L.style.opacity=1;var c=L.querySelector('.layer-copy');if(c)c.style.opacity=1;loadLayer(i);var v=L.querySelector('video');if(v)v.play().catch(function(){});});return;}
     var r=reel.getBoundingClientRect(),total=reel.offsetHeight-vh(),
         p=Math.min(Math.max(-r.top/total,0),1)*(N-1); /* 0 .. N-1 */
     var idx=Math.round(p);
     layers.forEach(function(L,i){
       var d=Math.abs(p-i),o=Math.max(0,1-d); /* crossfade neighbours */
       L.style.opacity=o.toFixed(3);
+      var c=L.querySelector('.layer-copy');
+      if(c)c.style.opacity=Math.max(0,1-2*d).toFixed(3); /* labels fade twice as fast as the video: only ONE label visible at any paused position (no doubled labels) */
       var m=L.querySelector('video')||L.querySelector('.still');
       if(m)m.style.transform='scale('+(1+0.06*(1-o)).toFixed(4)+')'; /* settle-in scale with the dissolve */
       L.classList.toggle('active',i===idx);
