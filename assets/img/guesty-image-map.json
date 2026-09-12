@@ -1,0 +1,1127 @@
+{
+ "_created": "2026-09-11 Marketing, CEO GO 21:18",
+ "_note": "original assets.guesty.com URL -> repo-relative local path. Reversible: restore by swapping local back to the key. Delete nothing.",
+ "map": {
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/4720aa37-4766-47-_xCOy": {
+   "bucket": "w1200",
+   "bytes": 85190,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/4720aa37-4766-47-_xCOy.jpg",
+   "sha256": "420ecc2f7e4bafb07cb0f6faf760201a1e243c949c1e9b6da2bebc28bf584613"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/6e354964-6e4d-40-cD_IQ": {
+   "bucket": "w1200",
+   "bytes": 61710,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/6e354964-6e4d-40-cD_IQ.jpg",
+   "sha256": "4b0e29551a0ab7cb8cff8357b67b15e830e3dc05dad6257e34dc66c98a3c0940"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/a4a49234-dd01-40-tiIm2": {
+   "bucket": "w1200",
+   "bytes": 97438,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/a4a49234-dd01-40-tiIm2.jpg",
+   "sha256": "a6c226c7746cb7854602fa1241c991928b47d2ff163982f21799f90507c157aa"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/78462bfc-592e-44-aUZ3D": {
+   "bucket": "w1200",
+   "bytes": 73354,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/78462bfc-592e-44-aUZ3D.jpg",
+   "sha256": "499a59c2cff6eb8d5c09f132aaffb6c7acbdad07b81a2babe995e3f15047943a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/7e040d7a-152b-4f-sOkXd": {
+   "bucket": "w1200",
+   "bytes": 75513,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/7e040d7a-152b-4f-sOkXd.jpg",
+   "sha256": "52fa5a54ec6881729ed5b2b897be502fe2f355fbd8d2cbaadc5b8ca69d38f395"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/8e1b118e-a89d-40-FB-0L": {
+   "bucket": "w1200",
+   "bytes": 89152,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/8e1b118e-a89d-40-FB-0L.jpg",
+   "sha256": "92be1d3617a0f7d7cd25c31fc6626076c210b007655e2c27d5e9496753ac2b75"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/b77b2fc2-2c38-4d-qZK37": {
+   "bucket": "w1200",
+   "bytes": 86099,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/b77b2fc2-2c38-4d-qZK37.jpg",
+   "sha256": "ae777e8bdd5b446dcfff2436c2e6531c76851f34ea68d3454f77cd606db9bf2b"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/e2854f63-2163-45-UvB0c": {
+   "bucket": "w1200",
+   "bytes": 76998,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/e2854f63-2163-45-UvB0c.jpg",
+   "sha256": "35baaca2ebc41c1c933e07481ddf79dd905ec35dda8268b456e380ee378b2dc2"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/e393be97-65cd-41-HHJLA": {
+   "bucket": "w1200",
+   "bytes": 92938,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/e393be97-65cd-41-HHJLA.jpg",
+   "sha256": "6e8108e3556180d6db11fb2c3e8c46b39618f23b3ee2e2e0787e411194e397e5"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/1606a0b6-b279-4c-Tm829": {
+   "bucket": "w1200",
+   "bytes": 55973,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/1606a0b6-b279-4c-Tm829.jpg",
+   "sha256": "ff825e16d9c4285e2debcc50cae468dff2bc23c99d8b466fffd11d8a8ae042e4"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/2654e5f4-c53c-41-kRtCh": {
+   "bucket": "w1200",
+   "bytes": 123299,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/2654e5f4-c53c-41-kRtCh.jpg",
+   "sha256": "b4b96c06f8f7a44665c3c9165ee68955fe98c865dc89f506d86bdfd40d1e1882"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/7a90f581-6aa7-4e-781TO": {
+   "bucket": "w1200",
+   "bytes": 83782,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/7a90f581-6aa7-4e-781TO.jpg",
+   "sha256": "b02e028ec9ed66f56fa72f57646149ebb2e5923fdc54c4a318c609ef652f9c18"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/90c9a7c5-6438-42-19dDP": {
+   "bucket": "w1200",
+   "bytes": 113459,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/90c9a7c5-6438-42-19dDP.jpg",
+   "sha256": "e4dc9e12d6779f6214b6fa63f3ebdd066bf0cc0821d9823346e02d88a48d1d3a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/e9ea3465-b049-47-6PHJI": {
+   "bucket": "w1200",
+   "bytes": 55725,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/e9ea3465-b049-47-6PHJI.jpg",
+   "sha256": "4872d4eeb94ddf0b72ba4ffac936da5ae667d097887288d0771a7342ddcae445"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175057/oeww6lzi0ghir4comnsf.jpg": {
+   "bucket": "w1200",
+   "bytes": 137003,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/oeww6lzi0ghir4comnsf.jpg",
+   "sha256": "5fa78bd515cb070014c1f984499bd5bfcb183e4c28d24593ca4cf5c7f2b3772a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175057/sq8xbsbno82uvyqerzfe.jpg": {
+   "bucket": "w1200",
+   "bytes": 118754,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/sq8xbsbno82uvyqerzfe.jpg",
+   "sha256": "0fc4a42d9e78b609e55266d2a7b1a39b1813d338ebed7e00dcbd80ea8ccb074f"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175057/xnk0y1ot8rilicggdbyf.jpg": {
+   "bucket": "w1200",
+   "bytes": 135010,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/xnk0y1ot8rilicggdbyf.jpg",
+   "sha256": "12414f4a6aab535b7f8c4fbc15c75d756ee549a5c4b4bf9ce534f970d867dae1"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175057/yy9hrfi0oqvigxiwk73n.jpg": {
+   "bucket": "w1200",
+   "bytes": 106487,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/yy9hrfi0oqvigxiwk73n.jpg",
+   "sha256": "e04e19982be2b0688f021efa785c343983d74f7e4242f7e9fd227882e643a117"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175057/zpb8ngefkmdpcuxgy5m7.jpg": {
+   "bucket": "w1200",
+   "bytes": 66734,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/zpb8ngefkmdpcuxgy5m7.jpg",
+   "sha256": "813d1de48bc13a9a46c1f2c5d23fac1849fa73c3c358463b0c3a1ffbf68d5fde"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175058/plbvu58dd9lr1ant7pyt.jpg": {
+   "bucket": "w1200",
+   "bytes": 119350,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/plbvu58dd9lr1ant7pyt.jpg",
+   "sha256": "e0059dca96c57d8ff60b2bf7abd8c5b284800809490a385c0268cd81523c4ee5"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175058/yf86qahnyhfkov6ysg4s.jpg": {
+   "bucket": "w1200",
+   "bytes": 133792,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/yf86qahnyhfkov6ysg4s.jpg",
+   "sha256": "9168259b952415302031732e5c2ae1c74cd20222a0362a4e9c0a94da76f511e2"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175062/dpt7aszjbmlx0jcqvodp.jpg": {
+   "bucket": "w1200",
+   "bytes": 142649,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/dpt7aszjbmlx0jcqvodp.jpg",
+   "sha256": "adeb39e166e2de28d33f8b61483dfe5a9773de13031b2c3c824e29273d2ffa93"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175062/mek7re3enzj52y3onsru.jpg": {
+   "bucket": "w1200",
+   "bytes": 121736,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/mek7re3enzj52y3onsru.jpg",
+   "sha256": "9300308b02d46b5dc309f4ec611d8f6d28433919b9d46607821b3170e5839639"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175062/nabyoxbcxslggzpqfgap.jpg": {
+   "bucket": "w1200",
+   "bytes": 97706,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/nabyoxbcxslggzpqfgap.jpg",
+   "sha256": "72e9c2a37660ea2e1a37e3a19c09057c7142c077449ec6f171bf62e96b10274a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175063/aausolcv1lkdv0vvzpft.jpg": {
+   "bucket": "w1200",
+   "bytes": 148007,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/aausolcv1lkdv0vvzpft.jpg",
+   "sha256": "106083c4d0cb6de61eac400bf1a94d171c44aebd328015102f46f697e42f45a1"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175063/ayh5ltkl8sed1nf1psjg.jpg": {
+   "bucket": "w1200",
+   "bytes": 125520,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/ayh5ltkl8sed1nf1psjg.jpg",
+   "sha256": "2b4a2c8eecb20f772b055f4a0a33bae99964c8bae09f2649813292e23f1be34d"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175063/plqflr7yiibbzwsqxzjj.jpg": {
+   "bucket": "w1200",
+   "bytes": 141978,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/plqflr7yiibbzwsqxzjj.jpg",
+   "sha256": "5568cc6c4f8c767edf0eb3f2f5ecc9edb278b4d84c78d6a2e293766c72730e42"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175094/xxv63qgecggbqlf4cwru.jpg": {
+   "bucket": "w1200",
+   "bytes": 54035,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/xxv63qgecggbqlf4cwru.jpg",
+   "sha256": "405155c606fa4bb4e74a2c0b7f951214caccc261416a2a7cb00bedb43f4c2188"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175094/zle7h1leqzhxycmsousy.jpg": {
+   "bucket": "w1200",
+   "bytes": 102791,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/zle7h1leqzhxycmsousy.jpg",
+   "sha256": "34ed85c4e2cb397d351f40d36294f2cf298e945097df4357e9e3768e4c32836a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175095/crfeaera8t7lu3xm2ijr.jpg": {
+   "bucket": "w1200",
+   "bytes": 101893,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/crfeaera8t7lu3xm2ijr.jpg",
+   "sha256": "b5f3fad50c6b77be032de052321176844b9d153891322f0a588ef57e713cf910"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175095/dzorkxi84gsffnvbj5ee.jpg": {
+   "bucket": "w1200",
+   "bytes": 84156,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/dzorkxi84gsffnvbj5ee.jpg",
+   "sha256": "d7b8492f51c806b8708b1dd4d45559aadd64c3cbfe6625323e608006643ce9a0"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175095/n4vxt6cjiziwn8kykf63.jpg": {
+   "bucket": "w1200",
+   "bytes": 123131,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/n4vxt6cjiziwn8kykf63.jpg",
+   "sha256": "d80a184543117ee256f16dbc7ab1b2b7f5c236f00db9bbc490e02c5c681a8d31"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1717175095/v90kykkm7fj5r7joff1c.jpg": {
+   "bucket": "w1200",
+   "bytes": 108607,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/v90kykkm7fj5r7joff1c.jpg",
+   "sha256": "27b02f7515472dc24e19c7693816bea7158e5395c7df0e5b68f89a0cf4698426"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1740535469/production/66565be6ef6be074587681ab/cfebb3cgyspwmdvn1sfb.jpg": {
+   "bucket": "w1200",
+   "bytes": 92342,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/cfebb3cgyspwmdvn1sfb.jpg",
+   "sha256": "f0959a07ac1d880b4670e06f84422819f281a2dd56f7451807229ed31e01a18e"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1740535469/production/66565be6ef6be074587681ab/ovcb4ot5ipyd7odvpnfi.jpg": {
+   "bucket": "w1200",
+   "bytes": 95988,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/ovcb4ot5ipyd7odvpnfi.jpg",
+   "sha256": "46faee3ee22decc6a5ed85da5ee204d1eaea54db214c38cd4c92051483c3d5fa"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1771189883/production/66565be6ef6be074587681ab/ofyyshi2l8xhh14w0yax.jpg": {
+   "bucket": "w1200",
+   "bytes": 69318,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/ofyyshi2l8xhh14w0yax.jpg",
+   "sha256": "7e7cbe9d70ba22d890555ec32eee1a75109bbd81bedcc7514cc5d8a00685e535"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1200/v1778900094/production/66565be6ef6be074587681ab/sxz72zlv6mr6q4wjajih.jpg": {
+   "bucket": "w1200",
+   "bytes": 100653,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1200/sxz72zlv6mr6q4wjajih.jpg",
+   "sha256": "8bf7740b90ffb62e4895c69e6e6d0bb8bcdcc89f9d1717f2321e073c12baffb8"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/4720aa37-4766-47-_xCOy": {
+   "bucket": "w1600",
+   "bytes": 137838,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/4720aa37-4766-47-_xCOy.jpg",
+   "sha256": "a50b195282cf55f46f7357d9916dc282fcb878743de8a7f66a2dc326f7af0697"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/6e354964-6e4d-40-cD_IQ": {
+   "bucket": "w1600",
+   "bytes": 99923,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/6e354964-6e4d-40-cD_IQ.jpg",
+   "sha256": "961b5c3a66231fc598b18f3d5a134f97bcfac25c8e695ecaa865fd47bcdd3495"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/a4a49234-dd01-40-tiIm2": {
+   "bucket": "w1600",
+   "bytes": 153377,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/a4a49234-dd01-40-tiIm2.jpg",
+   "sha256": "fcdfb6c701ae3dfc6cce1871cdf790e214b580dab1d21385cf1f8e988972399a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/78462bfc-592e-44-aUZ3D": {
+   "bucket": "w1600",
+   "bytes": 117067,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/78462bfc-592e-44-aUZ3D.jpg",
+   "sha256": "5bdeeb70ba8c8e222842b532963e78b2b19f172b1d255e180ce2ec63b4fbf5df"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/7e040d7a-152b-4f-sOkXd": {
+   "bucket": "w1600",
+   "bytes": 117466,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/7e040d7a-152b-4f-sOkXd.jpg",
+   "sha256": "f0e20a9b3061955b7fc3a98886c1be3d37350b9c845e62047aa4c6167ff44bcf"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/8e1b118e-a89d-40-FB-0L": {
+   "bucket": "w1600",
+   "bytes": 135685,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/8e1b118e-a89d-40-FB-0L.jpg",
+   "sha256": "44e9f4200832e83dfa6e3d9e36dbfc1e1863b4b0eb324d19fdbb902761f93f74"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/b77b2fc2-2c38-4d-qZK37": {
+   "bucket": "w1600",
+   "bytes": 140166,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/b77b2fc2-2c38-4d-qZK37.jpg",
+   "sha256": "87b9f03a40124983d719beaa414745b3d558e2ca0449fdce1e62d00eb57645eb"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/e2854f63-2163-45-UvB0c": {
+   "bucket": "w1600",
+   "bytes": 126171,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/e2854f63-2163-45-UvB0c.jpg",
+   "sha256": "28380394b256381314d251280701b9ce8200d0d2a4e68880aa4df2bbd8fc7e2d"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/e393be97-65cd-41-HHJLA": {
+   "bucket": "w1600",
+   "bytes": 141304,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/e393be97-65cd-41-HHJLA.jpg",
+   "sha256": "1b5039aa882955b16fcf1b4ac7de721daef5d2193a0a691ceb597bd133070830"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/1606a0b6-b279-4c-Tm829": {
+   "bucket": "w1600",
+   "bytes": 97057,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/1606a0b6-b279-4c-Tm829.jpg",
+   "sha256": "09d69b25b9fe854d38ac23a900216f72ac3d6161f9f5c19494459b96b11e54d8"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/2654e5f4-c53c-41-kRtCh": {
+   "bucket": "w1600",
+   "bytes": 208524,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/2654e5f4-c53c-41-kRtCh.jpg",
+   "sha256": "fbfa1023b600c325960ab7dc0e429056b9a60fa1b1aa5c9d0b407aeb5fedb247"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/7a90f581-6aa7-4e-781TO": {
+   "bucket": "w1600",
+   "bytes": 137266,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/7a90f581-6aa7-4e-781TO.jpg",
+   "sha256": "31c68c99dbc28911146e219f29d0a183e04ad5385dc711d0bb10ce35a9e94e2a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/90c9a7c5-6438-42-19dDP": {
+   "bucket": "w1600",
+   "bytes": 181928,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/90c9a7c5-6438-42-19dDP.jpg",
+   "sha256": "171ddcf6bea3523a2fa24a29008a3b29d00e9563c96e9591209a5b94321d819c"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/e9ea3465-b049-47-6PHJI": {
+   "bucket": "w1600",
+   "bytes": 93033,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/e9ea3465-b049-47-6PHJI.jpg",
+   "sha256": "418b5e972cab45e8a0d42576cca440d24ebb7abd71e2a091e6527175746e6dd0"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175057/oeww6lzi0ghir4comnsf.jpg": {
+   "bucket": "w1600",
+   "bytes": 155358,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/oeww6lzi0ghir4comnsf.jpg",
+   "sha256": "94ddbad114c18717b6e80172919601a919ce9675ab5b0c47e3f95517ac76fdff"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175057/sq8xbsbno82uvyqerzfe.jpg": {
+   "bucket": "w1600",
+   "bytes": 137201,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/sq8xbsbno82uvyqerzfe.jpg",
+   "sha256": "1c94b929b2d3223490ccb5f27399353554ff9217fa295b2057114e4ac72b2585"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175057/xnk0y1ot8rilicggdbyf.jpg": {
+   "bucket": "w1600",
+   "bytes": 143594,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/xnk0y1ot8rilicggdbyf.jpg",
+   "sha256": "bb9c4273e48b89c05b9d485019aef1bcbfb911b5ded4a3971171b54760b33e57"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175057/yy9hrfi0oqvigxiwk73n.jpg": {
+   "bucket": "w1600",
+   "bytes": 132281,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/yy9hrfi0oqvigxiwk73n.jpg",
+   "sha256": "bcda7f1fd160f1a791632debdd8d170a6daadc2b116143bf8c6d5efcf941cb9e"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175057/zpb8ngefkmdpcuxgy5m7.jpg": {
+   "bucket": "w1600",
+   "bytes": 93996,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/zpb8ngefkmdpcuxgy5m7.jpg",
+   "sha256": "5f6ec4b7e8aa8b9d81b1d7e03019a62b38e8d0615781d64c95599e51e0606222"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175058/plbvu58dd9lr1ant7pyt.jpg": {
+   "bucket": "w1600",
+   "bytes": 135729,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/plbvu58dd9lr1ant7pyt.jpg",
+   "sha256": "c6bacaa156991a747ac61655320e6e0701f075ede180199c392b61766bd4cfe1"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175058/yf86qahnyhfkov6ysg4s.jpg": {
+   "bucket": "w1600",
+   "bytes": 141506,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/yf86qahnyhfkov6ysg4s.jpg",
+   "sha256": "994d10242f5262c9bab6ec6111f88adac5b3c6bc5f574dfbf7babf75a70d8056"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175062/dpt7aszjbmlx0jcqvodp.jpg": {
+   "bucket": "w1600",
+   "bytes": 162071,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/dpt7aszjbmlx0jcqvodp.jpg",
+   "sha256": "68560733593917ac91e01593617c9b9c1ab211d259f69f3f08ebc3d1400ce6da"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175062/mek7re3enzj52y3onsru.jpg": {
+   "bucket": "w1600",
+   "bytes": 137227,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/mek7re3enzj52y3onsru.jpg",
+   "sha256": "ea2281c10ac9eb28cfdc52275e3f8b103bad4e9fae99a6a1c10a082305654277"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175062/nabyoxbcxslggzpqfgap.jpg": {
+   "bucket": "w1600",
+   "bytes": 102576,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/nabyoxbcxslggzpqfgap.jpg",
+   "sha256": "806680ae45f6336ccb8ff77ea5a3434ac42629ed3a8bfb8ab48bb809e4a0ebef"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175063/aausolcv1lkdv0vvzpft.jpg": {
+   "bucket": "w1600",
+   "bytes": 149204,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/aausolcv1lkdv0vvzpft.jpg",
+   "sha256": "f1c62b7dd4d028d6b6143f306f836272bd7e380f91c3d6805951684ea91e343d"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175063/ayh5ltkl8sed1nf1psjg.jpg": {
+   "bucket": "w1600",
+   "bytes": 133163,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/ayh5ltkl8sed1nf1psjg.jpg",
+   "sha256": "ac29bc21e81816d95fd4f2e5fe7754172c8693a59dfdf09b5ca7de7d4992344b"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175063/plqflr7yiibbzwsqxzjj.jpg": {
+   "bucket": "w1600",
+   "bytes": 149964,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/plqflr7yiibbzwsqxzjj.jpg",
+   "sha256": "628d14d6f5021a53302821d6255c9cf4c2dcdb8466952521e6594f8c6268bc93"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175094/xxv63qgecggbqlf4cwru.jpg": {
+   "bucket": "w1600",
+   "bytes": 77226,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/xxv63qgecggbqlf4cwru.jpg",
+   "sha256": "e4060f02b65c32ed725fb17421e6e3c38f350a185460609fe5b3fb431aa51cb3"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175094/zle7h1leqzhxycmsousy.jpg": {
+   "bucket": "w1600",
+   "bytes": 122887,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/zle7h1leqzhxycmsousy.jpg",
+   "sha256": "a7ca48d853794fce4701f1374a76ec6e30fe3f5c4aafec4f0f00c6d2d3e8fe25"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175095/crfeaera8t7lu3xm2ijr.jpg": {
+   "bucket": "w1600",
+   "bytes": 129309,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/crfeaera8t7lu3xm2ijr.jpg",
+   "sha256": "40d767a714e030fe4cb26d73225777a8551edb42a02402da7d261d942a9cdf80"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175095/dzorkxi84gsffnvbj5ee.jpg": {
+   "bucket": "w1600",
+   "bytes": 114558,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/dzorkxi84gsffnvbj5ee.jpg",
+   "sha256": "6116533b4029c4b611ce0fe4feb539ffec58995bae120bc0a2712005ad36d232"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175095/n4vxt6cjiziwn8kykf63.jpg": {
+   "bucket": "w1600",
+   "bytes": 139632,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/n4vxt6cjiziwn8kykf63.jpg",
+   "sha256": "170a5deb9f9ddf0a15c5b6fca783a1e32a3605f14c7b1e8f170481c1a541a482"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1717175095/v90kykkm7fj5r7joff1c.jpg": {
+   "bucket": "w1600",
+   "bytes": 119606,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/v90kykkm7fj5r7joff1c.jpg",
+   "sha256": "7b933fcde1af8244f984fefdaf7392f74d366550a70a25c3d72b290f2c8b432a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1740535469/production/66565be6ef6be074587681ab/cfebb3cgyspwmdvn1sfb.jpg": {
+   "bucket": "w1600",
+   "bytes": 137184,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/cfebb3cgyspwmdvn1sfb.jpg",
+   "sha256": "1a1778d3eb4f2af8da1f477e3a601b7cdff84a0c7392afc162b68f6e176aafce"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1740535469/production/66565be6ef6be074587681ab/ovcb4ot5ipyd7odvpnfi.jpg": {
+   "bucket": "w1600",
+   "bytes": 148486,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/ovcb4ot5ipyd7odvpnfi.jpg",
+   "sha256": "dc82fcf9662bc9f6dbf8c95997b17bedb8db56eaa93c3469403be02e64f89426"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1771189883/production/66565be6ef6be074587681ab/ofyyshi2l8xhh14w0yax.jpg": {
+   "bucket": "w1600",
+   "bytes": 103710,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/ofyyshi2l8xhh14w0yax.jpg",
+   "sha256": "cc6efb864ecbb59664b1dc6a2de4a263d57233438e8cc07beeae849b6c33093a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_1600/v1778900094/production/66565be6ef6be074587681ab/sxz72zlv6mr6q4wjajih.jpg": {
+   "bucket": "w1600",
+   "bytes": 140628,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w1600/sxz72zlv6mr6q4wjajih.jpg",
+   "sha256": "3dccf76fb4b911fb5dcd7100c185843351b833971106bb41d4e3cd8d598945d0"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/4720aa37-4766-47-_xCOy": {
+   "bucket": "w480",
+   "bytes": 23234,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/4720aa37-4766-47-_xCOy.jpg",
+   "sha256": "adf8725645a83a25de120a08ab01069435821bd5498f05d51eec84154f009537"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/6e354964-6e4d-40-cD_IQ": {
+   "bucket": "w480",
+   "bytes": 18605,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/6e354964-6e4d-40-cD_IQ.jpg",
+   "sha256": "ee93d828173282b963598ed5ddb9fa30537d23863554a47a73ef1d4df35485f1"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/a4a49234-dd01-40-tiIm2": {
+   "bucket": "w480",
+   "bytes": 23973,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/a4a49234-dd01-40-tiIm2.jpg",
+   "sha256": "b1aef9a71e7a584e21ef3e12212f4bb8c5ff14e8db532be0d64c18b716d70ce4"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/78462bfc-592e-44-aUZ3D": {
+   "bucket": "w480",
+   "bytes": 23012,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/78462bfc-592e-44-aUZ3D.jpg",
+   "sha256": "e009e5936d60776e0a5c5f685e8f0154ee38889edf4987272b1cf409eca129a1"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/7e040d7a-152b-4f-sOkXd": {
+   "bucket": "w480",
+   "bytes": 22170,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/7e040d7a-152b-4f-sOkXd.jpg",
+   "sha256": "0a65473baf8fc8411ae20dc03b19c2d2180f1a753d8ce88e9d69822d1cf55fd3"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/8e1b118e-a89d-40-FB-0L": {
+   "bucket": "w480",
+   "bytes": 24615,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/8e1b118e-a89d-40-FB-0L.jpg",
+   "sha256": "ea6cbe492c1fc9ad754fe7f54433b951513143d6ef9f715608ec7b2ea88bbc4b"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/b77b2fc2-2c38-4d-qZK37": {
+   "bucket": "w480",
+   "bytes": 26461,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/b77b2fc2-2c38-4d-qZK37.jpg",
+   "sha256": "d23eba6bfd9579cd97ff00face7bea14d77b13abd13b194a075abee471d3651d"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/e2854f63-2163-45-UvB0c": {
+   "bucket": "w480",
+   "bytes": 22635,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/e2854f63-2163-45-UvB0c.jpg",
+   "sha256": "9f253a7792bd076329560b5be13ab3bcaf01dd7159b4d8f2756993efce28e7d2"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/e393be97-65cd-41-HHJLA": {
+   "bucket": "w480",
+   "bytes": 22911,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/e393be97-65cd-41-HHJLA.jpg",
+   "sha256": "76742a829e8cbab4267e5b2856620dc9f0261f7be0fca3a007721e948b4fd262"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/1606a0b6-b279-4c-Tm829": {
+   "bucket": "w480",
+   "bytes": 19044,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/1606a0b6-b279-4c-Tm829.jpg",
+   "sha256": "3c4f82971cb7161669f07f3f74c1fd8522ccc156f6a990a54e872c6d4dd3a8d1"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/2654e5f4-c53c-41-kRtCh": {
+   "bucket": "w480",
+   "bytes": 32264,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/2654e5f4-c53c-41-kRtCh.jpg",
+   "sha256": "6b64c949ac50b45b9252c6b52dd0ea47dc4a7d8848ce555ff31482af3797c76c"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/7a90f581-6aa7-4e-781TO": {
+   "bucket": "w480",
+   "bytes": 22954,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/7a90f581-6aa7-4e-781TO.jpg",
+   "sha256": "fe25c946ab7c9dfc1b5079e40b4929d6e198b948824d0b6963211b928f7df1c9"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/90c9a7c5-6438-42-19dDP": {
+   "bucket": "w480",
+   "bytes": 28496,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/90c9a7c5-6438-42-19dDP.jpg",
+   "sha256": "7885709ab9ae9ffc861865c75e712e26ee04d8a57d604357e963554ca25313a6"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/e9ea3465-b049-47-6PHJI": {
+   "bucket": "w480",
+   "bytes": 18934,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/e9ea3465-b049-47-6PHJI.jpg",
+   "sha256": "e07439171616971180810f2025a3807b5bdbabea2b2699fd8685896f403fe6d8"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175057/oeww6lzi0ghir4comnsf.jpg": {
+   "bucket": "w480",
+   "bytes": 25821,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/oeww6lzi0ghir4comnsf.jpg",
+   "sha256": "521b34f953d4c775cf6b7f25eaef851f2e14f421e525b8d49d4d99ae72ec182e"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175057/sq8xbsbno82uvyqerzfe.jpg": {
+   "bucket": "w480",
+   "bytes": 25329,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/sq8xbsbno82uvyqerzfe.jpg",
+   "sha256": "b6b8a5205f24b6f125c36ed212ab6d4c7b544ff1c11c9b2d2b8faec0abf69aff"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175057/xnk0y1ot8rilicggdbyf.jpg": {
+   "bucket": "w480",
+   "bytes": 26407,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/xnk0y1ot8rilicggdbyf.jpg",
+   "sha256": "b03827d34ccdd64338401550046130d68b8c6ccf60361cfb78ccf7c0e50a9b24"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175057/yy9hrfi0oqvigxiwk73n.jpg": {
+   "bucket": "w480",
+   "bytes": 24533,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/yy9hrfi0oqvigxiwk73n.jpg",
+   "sha256": "d197bee99864cc9ead81ea8f1959f0249f86a25e188d2e58ab55d7726248d51d"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175057/zpb8ngefkmdpcuxgy5m7.jpg": {
+   "bucket": "w480",
+   "bytes": 22838,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/zpb8ngefkmdpcuxgy5m7.jpg",
+   "sha256": "1189138f0a941e0be8f033ef7179e7a3f745d3ea76d8e3f6464b0416c45f4d4c"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175058/plbvu58dd9lr1ant7pyt.jpg": {
+   "bucket": "w480",
+   "bytes": 24376,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/plbvu58dd9lr1ant7pyt.jpg",
+   "sha256": "0e3136b722b6fd4d561f31e03c54c0b3731c4c7e9ba991d25cff64139cc8dc2c"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175058/yf86qahnyhfkov6ysg4s.jpg": {
+   "bucket": "w480",
+   "bytes": 24996,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/yf86qahnyhfkov6ysg4s.jpg",
+   "sha256": "68999deb58d97500a3bcaaa1927eb5508bb3720f6d125ede5cb2ddb272bfb876"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175062/dpt7aszjbmlx0jcqvodp.jpg": {
+   "bucket": "w480",
+   "bytes": 29724,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/dpt7aszjbmlx0jcqvodp.jpg",
+   "sha256": "0008053458f11d4215f5b3707bc418d12d91fc392f2a790f75b4370b1f98784e"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175062/mek7re3enzj52y3onsru.jpg": {
+   "bucket": "w480",
+   "bytes": 24990,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/mek7re3enzj52y3onsru.jpg",
+   "sha256": "327864803007c4fe56d000c2ac4052e85bb04dcee40a8cd7a03e730559d846e4"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175062/nabyoxbcxslggzpqfgap.jpg": {
+   "bucket": "w480",
+   "bytes": 25059,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/nabyoxbcxslggzpqfgap.jpg",
+   "sha256": "6592445dce9dde1621d4d0d4c940cfdaa8a831fc30cbb541240a3f464da8de21"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175063/aausolcv1lkdv0vvzpft.jpg": {
+   "bucket": "w480",
+   "bytes": 27126,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/aausolcv1lkdv0vvzpft.jpg",
+   "sha256": "0daded5f974187fa93bf3aea837a3336676cf64fb1cc6183a517b18ce33456d3"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175063/ayh5ltkl8sed1nf1psjg.jpg": {
+   "bucket": "w480",
+   "bytes": 25005,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/ayh5ltkl8sed1nf1psjg.jpg",
+   "sha256": "dabeefd7f8caa39456c3b141fb60317026e93bdf5380ad176f902c466d421428"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175063/plqflr7yiibbzwsqxzjj.jpg": {
+   "bucket": "w480",
+   "bytes": 28539,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/plqflr7yiibbzwsqxzjj.jpg",
+   "sha256": "837fd3d4539b5d7705fb633345f6d6d77e44299af505cb1bf0700116def8e6bb"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175094/xxv63qgecggbqlf4cwru.jpg": {
+   "bucket": "w480",
+   "bytes": 17589,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/xxv63qgecggbqlf4cwru.jpg",
+   "sha256": "a8eff162dd12c7cf4b0d3f178ee88d7d566f9ee02255265fa76eeac0c7b6dc5c"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175094/zle7h1leqzhxycmsousy.jpg": {
+   "bucket": "w480",
+   "bytes": 23556,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/zle7h1leqzhxycmsousy.jpg",
+   "sha256": "2fc3195332bca41a72e818e6ad796a0a6b57aca33e274a49b598d72a35fc70c4"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175095/crfeaera8t7lu3xm2ijr.jpg": {
+   "bucket": "w480",
+   "bytes": 25508,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/crfeaera8t7lu3xm2ijr.jpg",
+   "sha256": "b34aa8a1ddd76fa725e0ea148143e6bb951b63d6e04493dd7529931ec9117238"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175095/dzorkxi84gsffnvbj5ee.jpg": {
+   "bucket": "w480",
+   "bytes": 21486,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/dzorkxi84gsffnvbj5ee.jpg",
+   "sha256": "ad8a63718e068eebf2f138e538fc77df81f7b7929041318d21664444521c8696"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175095/n4vxt6cjiziwn8kykf63.jpg": {
+   "bucket": "w480",
+   "bytes": 24744,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/n4vxt6cjiziwn8kykf63.jpg",
+   "sha256": "ffd13a8b165b6c2648e565c2116feeb19ec0faa838bcea99f61254137e2037b3"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1717175095/v90kykkm7fj5r7joff1c.jpg": {
+   "bucket": "w480",
+   "bytes": 21544,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/v90kykkm7fj5r7joff1c.jpg",
+   "sha256": "360fa1b6642cf499a019fed6e6a47ed684e11c66e060ce7b6852d6d7119a37fc"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1740535469/production/66565be6ef6be074587681ab/cfebb3cgyspwmdvn1sfb.jpg": {
+   "bucket": "w480",
+   "bytes": 22965,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/cfebb3cgyspwmdvn1sfb.jpg",
+   "sha256": "8fc2248fa6ce6251c6bb53752eb225618e2b3598b11defd98e97abeca8009263"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1740535469/production/66565be6ef6be074587681ab/ovcb4ot5ipyd7odvpnfi.jpg": {
+   "bucket": "w480",
+   "bytes": 24019,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/ovcb4ot5ipyd7odvpnfi.jpg",
+   "sha256": "782d2ee03ab83b82151c75fcd4ed00489cf4fd68010c78489823f30540fd63af"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1771189883/production/66565be6ef6be074587681ab/ofyyshi2l8xhh14w0yax.jpg": {
+   "bucket": "w480",
+   "bytes": 21409,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/ofyyshi2l8xhh14w0yax.jpg",
+   "sha256": "856f55a8d8263e52bb46d400bf1e5028159ab51a8bd99cc90be6827f84663d1a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_480/v1778900094/production/66565be6ef6be074587681ab/sxz72zlv6mr6q4wjajih.jpg": {
+   "bucket": "w480",
+   "bytes": 25394,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w480/sxz72zlv6mr6q4wjajih.jpg",
+   "sha256": "08ba738a06918be816298c0a470c543efd4f3f70d521aacf8b092f0790a502f7"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/4720aa37-4766-47-_xCOy": {
+   "bucket": "w800",
+   "bytes": 52818,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/4720aa37-4766-47-_xCOy.jpg",
+   "sha256": "64a6cae7bba4ff555c1bb91ffe121516b10de6ba1979dfbcb90d9bf9dbafa3b7"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/6e354964-6e4d-40-cD_IQ": {
+   "bucket": "w800",
+   "bytes": 38962,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/6e354964-6e4d-40-cD_IQ.jpg",
+   "sha256": "7cf4b9f2c1c3b41fb485523b34b530cc0827f0e2f72cd1a83a95fb4f87c3e193"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/675ada1a6e67f00012fe5ce6/a4a49234-dd01-40-tiIm2": {
+   "bucket": "w800",
+   "bytes": 55023,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/a4a49234-dd01-40-tiIm2.jpg",
+   "sha256": "5fac58103b3949347ec357dcbbcad2190cd5459dc572389c117de6006ec31c0d"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/78462bfc-592e-44-aUZ3D": {
+   "bucket": "w800",
+   "bytes": 46403,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/78462bfc-592e-44-aUZ3D.jpg",
+   "sha256": "357e3e5e5f2fe1bfc56385cfa6327bd5a750ebbeba4366ed282a6d776bfbd19a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/7e040d7a-152b-4f-sOkXd": {
+   "bucket": "w800",
+   "bytes": 47217,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/7e040d7a-152b-4f-sOkXd.jpg",
+   "sha256": "64a7d507569775be8340b23effbab6036eea2e81b801420281e7c0e211477500"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/8e1b118e-a89d-40-FB-0L": {
+   "bucket": "w800",
+   "bytes": 53996,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/8e1b118e-a89d-40-FB-0L.jpg",
+   "sha256": "8bb6cc18fcd5a92debc1a57cf5ac0b1c61a9a8ccf6d623c6921bc6af10176684"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/b77b2fc2-2c38-4d-qZK37": {
+   "bucket": "w800",
+   "bytes": 53697,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/b77b2fc2-2c38-4d-qZK37.jpg",
+   "sha256": "c2144b9bbd52c5ba5f15eac6c4d062efa3106ca65b5ede91de9f2e1d8d869412"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/e2854f63-2163-45-UvB0c": {
+   "bucket": "w800",
+   "bytes": 48818,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/e2854f63-2163-45-UvB0c.jpg",
+   "sha256": "f3451c5ce3c8903de0125b146959da9a160b3b66e7ea4306c156daf61e2f3b2d"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/e393be97-65cd-41-HHJLA": {
+   "bucket": "w800",
+   "bytes": 56148,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/e393be97-65cd-41-HHJLA.jpg",
+   "sha256": "d4544d389ec362065054bbb9892c9eda010b3f1236fe3b88d4d7f5ac2127b87f"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/1606a0b6-b279-4c-Tm829": {
+   "bucket": "w800",
+   "bytes": 39728,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/1606a0b6-b279-4c-Tm829.jpg",
+   "sha256": "e7259af339cb98f5999454be7ee31d933b3f0dc6ed795a8bef61ed43f0a62a3b"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/2654e5f4-c53c-41-kRtCh": {
+   "bucket": "w800",
+   "bytes": 76613,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/2654e5f4-c53c-41-kRtCh.jpg",
+   "sha256": "fee2f098230dee99f7ff03652c5898a5e081c23a307238de6153dc4057ecfb1a"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/7a90f581-6aa7-4e-781TO": {
+   "bucket": "w800",
+   "bytes": 52784,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/7a90f581-6aa7-4e-781TO.jpg",
+   "sha256": "8247f0fecce9f68705e487bd798e22d4b5ef5a0eaac09daf1f1b3ae11d611651"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/90c9a7c5-6438-42-19dDP": {
+   "bucket": "w800",
+   "bytes": 68219,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/90c9a7c5-6438-42-19dDP.jpg",
+   "sha256": "de8177436a3e5efd5dc2d257d4d5457c359bc957f066b09da8f90f70ed26dbca"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/6a03b7807e628900149378d0/e9ea3465-b049-47-6PHJI": {
+   "bucket": "w800",
+   "bytes": 36987,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/e9ea3465-b049-47-6PHJI.jpg",
+   "sha256": "5e1c461b1fe086262747d74b5fde5f7b540f085a6a4a118e96e9ea914f8ab0a0"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175057/oeww6lzi0ghir4comnsf.jpg": {
+   "bucket": "w800",
+   "bytes": 52874,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/oeww6lzi0ghir4comnsf.jpg",
+   "sha256": "a82748e803a9f0a5aa48fbb8f1695d8fcd22fc3e1a1a1554e538feb8f26595c0"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175057/sq8xbsbno82uvyqerzfe.jpg": {
+   "bucket": "w800",
+   "bytes": 50769,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/sq8xbsbno82uvyqerzfe.jpg",
+   "sha256": "22c14640fe3fb18ffa6a645c29786ee8fcd66bb359678ece8f750cf6ad96d9ea"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175057/xnk0y1ot8rilicggdbyf.jpg": {
+   "bucket": "w800",
+   "bytes": 53170,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/xnk0y1ot8rilicggdbyf.jpg",
+   "sha256": "6714a693c45ee4f8385b44705041043cbc2beb56dd6c25f27501aa72777c911c"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175057/yy9hrfi0oqvigxiwk73n.jpg": {
+   "bucket": "w800",
+   "bytes": 52109,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/yy9hrfi0oqvigxiwk73n.jpg",
+   "sha256": "418ed49fa3428d935204e1c6fb01d41946beeeb3c991ce332db2a32a6ee6eca3"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175057/zpb8ngefkmdpcuxgy5m7.jpg": {
+   "bucket": "w800",
+   "bytes": 39959,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/zpb8ngefkmdpcuxgy5m7.jpg",
+   "sha256": "f34ec75e943d578743fff267f76b12991ec26063be21490f60917ffb5f9ac6c1"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175058/plbvu58dd9lr1ant7pyt.jpg": {
+   "bucket": "w800",
+   "bytes": 49243,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/plbvu58dd9lr1ant7pyt.jpg",
+   "sha256": "25f99224974941c7466b7238458ec042cf2ff794145c1b693b60664f9c17a185"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175058/yf86qahnyhfkov6ysg4s.jpg": {
+   "bucket": "w800",
+   "bytes": 50762,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/yf86qahnyhfkov6ysg4s.jpg",
+   "sha256": "5c81cb4979842ccfafd3305db6811dd48eb4a68e55b548dd1b5b58afa7b78252"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175062/dpt7aszjbmlx0jcqvodp.jpg": {
+   "bucket": "w800",
+   "bytes": 62421,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/dpt7aszjbmlx0jcqvodp.jpg",
+   "sha256": "da65e994cf85006e21fa63e2a77af5ee67cd75712fb69507e780af108ca1dbeb"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175062/mek7re3enzj52y3onsru.jpg": {
+   "bucket": "w800",
+   "bytes": 49483,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/mek7re3enzj52y3onsru.jpg",
+   "sha256": "ee3a0cde2722108a280bb37c2e0ce79d5ba7ecb0cb6a195e8d7d61401e556603"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175062/nabyoxbcxslggzpqfgap.jpg": {
+   "bucket": "w800",
+   "bytes": 46397,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/nabyoxbcxslggzpqfgap.jpg",
+   "sha256": "45071ef95ebfb23dfadc5e3365ee3047fe70947676390d3bd5a1eb08d5b7141e"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175063/aausolcv1lkdv0vvzpft.jpg": {
+   "bucket": "w800",
+   "bytes": 57894,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/aausolcv1lkdv0vvzpft.jpg",
+   "sha256": "829a5a270f4e3b6a4f101d9c14727b35f7b9c5549879fdaca1576d8be2872fbe"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175063/ayh5ltkl8sed1nf1psjg.jpg": {
+   "bucket": "w800",
+   "bytes": 48949,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/ayh5ltkl8sed1nf1psjg.jpg",
+   "sha256": "381990e8d87a92b02aee71cdba811d6d72156264764e4233314d8466f6e67f0c"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175063/plqflr7yiibbzwsqxzjj.jpg": {
+   "bucket": "w800",
+   "bytes": 57697,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/plqflr7yiibbzwsqxzjj.jpg",
+   "sha256": "119970ca4d43e13bc8280334dcaa6e4b258c96ee3aa49035be5aca520c7c7fca"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175094/xxv63qgecggbqlf4cwru.jpg": {
+   "bucket": "w800",
+   "bytes": 30673,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/xxv63qgecggbqlf4cwru.jpg",
+   "sha256": "5fbc6838d89232d6cc3f97bd0741ebdb5cef637952ce3f66d9ff1954e1ae357d"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175094/zle7h1leqzhxycmsousy.jpg": {
+   "bucket": "w800",
+   "bytes": 48960,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/zle7h1leqzhxycmsousy.jpg",
+   "sha256": "13a0419b9ac5a1f3391417aac7c6ea2720802e97e5c199adac411beb1356b173"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175095/crfeaera8t7lu3xm2ijr.jpg": {
+   "bucket": "w800",
+   "bytes": 49551,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/crfeaera8t7lu3xm2ijr.jpg",
+   "sha256": "da165fe724fbd3b94f2a7268e3be205f48fcc5a12ba081c449aba1597c32d496"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175095/dzorkxi84gsffnvbj5ee.jpg": {
+   "bucket": "w800",
+   "bytes": 42130,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/dzorkxi84gsffnvbj5ee.jpg",
+   "sha256": "322d9d16b8240791df768ce61c663d2b298f589832249415b1400761662a7257"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175095/n4vxt6cjiziwn8kykf63.jpg": {
+   "bucket": "w800",
+   "bytes": 48800,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/n4vxt6cjiziwn8kykf63.jpg",
+   "sha256": "78a9542e5914274096dbfdd69e366e5cb2db8d1e85e7adc28a900e046d56323f"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1717175095/v90kykkm7fj5r7joff1c.jpg": {
+   "bucket": "w800",
+   "bytes": 44885,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/v90kykkm7fj5r7joff1c.jpg",
+   "sha256": "6eddc05671d6a2b72fc715422d998acd16f42e4f54ddfa739a53b10e2b5288d9"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1740535469/production/66565be6ef6be074587681ab/cfebb3cgyspwmdvn1sfb.jpg": {
+   "bucket": "w800",
+   "bytes": 49859,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/cfebb3cgyspwmdvn1sfb.jpg",
+   "sha256": "6389b451a44ebabc5cafc7fec6ff070a54ba6698e5f0aba8e3e69c1a23479af0"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1740535469/production/66565be6ef6be074587681ab/ovcb4ot5ipyd7odvpnfi.jpg": {
+   "bucket": "w800",
+   "bytes": 51503,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/ovcb4ot5ipyd7odvpnfi.jpg",
+   "sha256": "0e0a3249814797ae073651254b48bb590c3bf7e23199f01546962cb81e62907d"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1771189883/production/66565be6ef6be074587681ab/ofyyshi2l8xhh14w0yax.jpg": {
+   "bucket": "w800",
+   "bytes": 40048,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/ofyyshi2l8xhh14w0yax.jpg",
+   "sha256": "cf41c1112aff56ce2fcfa956521bd17b09667156d735bfcb702d7dfd475bb1e1"
+  },
+  "https://assets.guesty.com/image/upload/f_auto,q_auto,w_800/v1778900094/production/66565be6ef6be074587681ab/sxz72zlv6mr6q4wjajih.jpg": {
+   "bucket": "w800",
+   "bytes": 51252,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/w800/sxz72zlv6mr6q4wjajih.jpg",
+   "sha256": "bd8ebd57a91a920314c76600d8aa176e94416b45dc5c00a67d5fd52a3ea891e6"
+  },
+  "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37f58986546b85979d10748f59e7338167d897d659968996/69bc89b3c13a5a0013d38be8/b77b2fc2-2c38-4d-qZK37": {
+   "bucket": "orig",
+   "bytes": 258800,
+   "content_type": "application/octet-stream",
+   "local": "assets/img/guesty/orig/b77b2fc2-2c38-4d-qZK37.jpg",
+   "sha256": "2b98f4c6678497bbb18abf036cd94232532e937d53e669721f8bf2aee2e97cad"
+  },
+  "https://assets.guesty.com/image/upload/v1717175057/oeww6lzi0ghir4comnsf.jpg": {
+   "bucket": "orig",
+   "bytes": 137507,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/orig/oeww6lzi0ghir4comnsf.jpg",
+   "sha256": "eb71715555ceba2a6fe2e2d494275c9d95ba35cb8c8c7b2e3170225d699527eb"
+  },
+  "https://assets.guesty.com/image/upload/v1717175057/zpb8ngefkmdpcuxgy5m7.jpg": {
+   "bucket": "orig",
+   "bytes": 20856,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/orig/zpb8ngefkmdpcuxgy5m7.jpg",
+   "sha256": "7601a2dcb08c02b6901fbc349c95e6e31df43acb4a5c100b9eb5260d11aa606c"
+  },
+  "https://assets.guesty.com/image/upload/v1717175062/dpt7aszjbmlx0jcqvodp.jpg": {
+   "bucket": "orig",
+   "bytes": 142649,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/orig/dpt7aszjbmlx0jcqvodp.jpg",
+   "sha256": "adeb39e166e2de28d33f8b61483dfe5a9773de13031b2c3c824e29273d2ffa93"
+  },
+  "https://assets.guesty.com/image/upload/v1717175062/nabyoxbcxslggzpqfgap.jpg": {
+   "bucket": "orig",
+   "bytes": 97706,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/orig/nabyoxbcxslggzpqfgap.jpg",
+   "sha256": "72e9c2a37660ea2e1a37e3a19c09057c7142c077449ec6f171bf62e96b10274a"
+  },
+  "https://assets.guesty.com/image/upload/v1717175094/xxv63qgecggbqlf4cwru.jpg": {
+   "bucket": "orig",
+   "bytes": 54035,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/orig/xxv63qgecggbqlf4cwru.jpg",
+   "sha256": "405155c606fa4bb4e74a2c0b7f951214caccc261416a2a7cb00bedb43f4c2188"
+  },
+  "https://assets.guesty.com/image/upload/v1717175094/zle7h1leqzhxycmsousy.jpg": {
+   "bucket": "orig",
+   "bytes": 102791,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/orig/zle7h1leqzhxycmsousy.jpg",
+   "sha256": "34ed85c4e2cb397d351f40d36294f2cf298e945097df4357e9e3768e4c32836a"
+  },
+  "https://assets.guesty.com/image/upload/v1717175095/dzorkxi84gsffnvbj5ee.jpg": {
+   "bucket": "orig",
+   "bytes": 84156,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/orig/dzorkxi84gsffnvbj5ee.jpg",
+   "sha256": "d7b8492f51c806b8708b1dd4d45559aadd64c3cbfe6625323e608006643ce9a0"
+  },
+  "https://assets.guesty.com/image/upload/v1740535469/production/66565be6ef6be074587681ab/cfebb3cgyspwmdvn1sfb.jpg": {
+   "bucket": "orig",
+   "bytes": 189676,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/orig/cfebb3cgyspwmdvn1sfb.jpg",
+   "sha256": "5339097525d21b9ffa91af4c4e5bf6443597ffe0b4fcbcc57704d11f39bee5d4"
+  },
+  "https://assets.guesty.com/image/upload/v1740535469/production/66565be6ef6be074587681ab/ovcb4ot5ipyd7odvpnfi.jpg": {
+   "bucket": "orig",
+   "bytes": 213713,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/orig/ovcb4ot5ipyd7odvpnfi.jpg",
+   "sha256": "ded3cdf501d4c5a07bca16810f1b740c9ce93e3bc293cb8654b07ff2defce256"
+  },
+  "https://assets.guesty.com/image/upload/v1778900094/production/66565be6ef6be074587681ab/sxz72zlv6mr6q4wjajih.jpg": {
+   "bucket": "orig",
+   "bytes": 103729,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/orig/sxz72zlv6mr6q4wjajih.jpg",
+   "sha256": "674cf9ced82741ba238f7b36b866ca4e4ade2417255808eea77157d3f9f84f36"
+  },
+  "https://assets.guesty.com/image/upload/v1784841646/production/66565be6ef6be074587681ab/ekawj9unczh2apl4uzul.jpg": {
+   "bucket": "orig",
+   "bytes": 257562,
+   "content_type": "image/jpeg",
+   "local": "assets/img/guesty/orig/ekawj9unczh2apl4uzul.jpg",
+   "sha256": "d879377fdf982cf4822312712186bef30dd1c58b4f0b0bad2268d5683a6b3f7d",
+   "used_by": "klaviyo winback templates only (not on the website)"
+  }
+ }
+}
