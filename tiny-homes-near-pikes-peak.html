@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="thb-attribution.js"></script>
 <meta charset="UTF-8">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRNRCW6F55"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-CRNRCW6F55');
+  gtag('config', 'G-CRNRCW6F55', {
+    // Cross-domain measurement to the Hospitable booking flow (staged 2026-09-10): the same client_id/session
+    // continue onto booking.hospitable.com so purchase events there keep the page/campaign that produced them.
+    linker: { domains: ['tinyhomeboutiques.com', 'booking.hospitable.com'], accept_incoming: true, decorate_forms: true }
+  });
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tiny Homes Near Pikes Peak — 6 Boutique Stays, 10 Min from the Mountain | Tiny Home Boutiques</title>
@@ -219,7 +224,7 @@ a:hover { color: var(--gold-light); }
       <li><a href="https://tinyhomeboutiques.com">Home</a></li>
       <li><a href="https://tinyhomeboutiques.com/#properties">Properties</a></li>
       <li><a href="things-to-do-woodland-park-colorado.html">Area Guide</a></li>
-      <li><a href="https://tinyhomeboutiques.guestybookings.com/en">Book Now</a></li>
+      <li><a href="/#book-direct">Book Now</a></li>
     </ul>
   </div>
 </nav>
@@ -240,7 +245,7 @@ a:hover { color: var(--gold-light); }
     <span>10 min from Pikes Peak</span>
     <span>Book direct &mdash; no fees</span>
   </div>
-  <a href="https://tinyhomeboutiques.guestybookings.com/en" class="hero-cta">Check Availability</a>
+  <a class="hero-cta" href="/#book-direct">Check Availability</a>
 </header>
 
 <main class="content-wrapper">
@@ -307,7 +312,7 @@ a:hover { color: var(--gold-light); }
       </div>
       <div class="book-links">
         <a href="https://www.airbnb.com/rooms/704910906218647468" target="_blank" rel="noopener">Airbnb Listing &#8599;</a>
-        <a href="https://tinyhomeboutiques.guestybookings.com/en">Book Direct</a>
+        <a href="/#book-direct">Book Direct</a>
       </div>
     </div>
 
@@ -318,7 +323,7 @@ a:hover { color: var(--gold-light); }
       <p>Unit W carries the highest Airbnb rating in our six-home cluster. Design-forward tiny home in the same Woodland Park cluster, 10 minutes from the peak. Guests consistently flag the interior detail and quiet location. Quiet-season availability is usually easier here than Unit Y.</p>
       <div class="book-links">
         <a href="https://www.airbnb.com/rooms/1157418080674498913" target="_blank" rel="noopener">Airbnb Listing &#8599;</a>
-        <a href="https://tinyhomeboutiques.guestybookings.com/en">Book Direct</a>
+        <a href="/#book-direct">Book Direct</a>
       </div>
     </div>
 
@@ -329,7 +334,7 @@ a:hover { color: var(--gold-light); }
       <p>The BrightStar is a popular choice for couples and remote-work travelers. Same Woodland Park cluster, same 10-minute drive to the peak, and a rating that has held steady through more than 135 stays. Pairs naturally with Unit W for two-couple trips.</p>
       <div class="book-links">
         <a href="https://www.airbnb.com/rooms/1157510573326154721" target="_blank" rel="noopener">Airbnb Listing &#8599;</a>
-        <a href="https://tinyhomeboutiques.guestybookings.com/en">Book Direct</a>
+        <a href="/#book-direct">Book Direct</a>
       </div>
     </div>
 
@@ -340,7 +345,7 @@ a:hover { color: var(--gold-light); }
       <p>Heaven's Retreat is our lower-volume unit in the cluster and the best choice for last-minute bookings that Unit Y and Unit W miss. Same 10-minute drive to the Pikes Peak Highway. Superhost-rated host team behind every stay.</p>
       <div class="book-links">
         <a href="https://www.airbnb.com/rooms/1305846645531224893" target="_blank" rel="noopener">Airbnb Listing &#8599;</a>
-        <a href="https://tinyhomeboutiques.guestybookings.com/en">Book Direct</a>
+        <a href="/#book-direct">Book Direct</a>
       </div>
     </div>
 
@@ -354,7 +359,7 @@ a:hover { color: var(--gold-light); }
         <span class="amenity">Panoramic Mountain Views</span>
       </div>
       <div class="book-links">
-        <a href="https://tinyhomeboutiques.guestybookings.com/en">Book Direct</a>
+        <a href="/#book-direct">Book Direct</a>
       </div>
     </div>
     <div class="property-card">
@@ -369,7 +374,7 @@ a:hover { color: var(--gold-light); }
         <span class="amenity">Wireless Internet</span>
       </div>
       <div class="book-links">
-        <a href="https://tinyhomeboutiques.guestybookings.com/en">Book Direct</a>
+        <a href="/#book-direct">Book Direct</a>
       </div>
     </div>
   </div>
@@ -391,7 +396,7 @@ a:hover { color: var(--gold-light); }
   <div class="cta-box" id="how-to-save">
     <h3>How to Skip Service Fees on Any Stay</h3>
     <p>Booking at tinyhomeboutiques.com skips the service and site fees that Airbnb and VRBO add at checkout. The nightly rate is identical — you simply keep the difference. Same tiny home, same host team, same Superhost standards.</p>
-    <a href="https://tinyhomeboutiques.guestybookings.com/en" class="cta-button">Book Direct &mdash; No Service Fees</a>
+    <a class="cta-button" href="/#book-direct">Book Direct &mdash; No Service Fees</a>
   </div>
 
   <div class="article-section" id="faq">
@@ -431,7 +436,7 @@ a:hover { color: var(--gold-light); }
   <div class="cta-box">
     <h3>Six Tiny Homes. Ten Minutes From the Peak. Available Now.</h3>
     <p>Check live rates and open nights. Same pricing as Airbnb minus the site fees.</p>
-    <a href="https://tinyhomeboutiques.guestybookings.com/en" class="cta-button">Check Availability</a>
+    <a class="cta-button" href="/#book-direct">Check Availability</a>
   </div>
 
   <div class="related-articles">
@@ -466,7 +471,7 @@ a:hover { color: var(--gold-light); }
       <a href="https://tinyhomeboutiques.com/#properties">Properties</a>
       <a href="tiny-home-vacation-rental-colorado.html">Colorado Guide</a>
       <a href="things-to-do-woodland-park-colorado.html">Area Guide</a>
-      <a href="https://tinyhomeboutiques.guestybookings.com/en">Book Direct</a>
+      <a href="/#book-direct">Book Direct</a>
     </div>
     <div class="footer-copy">&copy; 2026 DLJ Properties LLC &middot; Tiny Home Boutiques</div>
   </div>

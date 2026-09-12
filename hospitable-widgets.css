@@ -1,0 +1,30 @@
+/* Hospitable Direct booking components — staged 2026-09-10. Uses the site's existing tokens; no other visual change. */
+.book-direct{background:var(--navy,#0a0e1a);padding:5rem 1.5rem;position:relative}
+.book-direct .section-container{max-width:1100px;margin:0 auto}
+.book-direct .section-header{margin-bottom:2.5rem}
+.hb-panel{background:var(--white,#fff);border-radius:var(--radius,16px);box-shadow:var(--shadow-lg,0 16px 64px rgba(0,0,0,.5));border-top:4px solid var(--gold,#c9a84c);padding:1.5rem;max-width:960px;margin:0 auto}
+.hb-widget{min-height:420px;position:relative}
+.hb-widget--property{min-height:504px}  /* measured injected iframe height (CTO 23:29 ET) */
+.hb-widget iframe{display:block;width:100%;border:0}
+.hb-widget:empty::before{content:"Live availability & pricing load here — Hospitable widget code goes in this container.";display:flex;align-items:center;justify-content:center;text-align:center;min-height:420px;padding:2rem;border:2px dashed rgba(201,168,76,.6);border-radius:10px;color:#64748b;font-family:'DM Sans',sans-serif;font-size:.95rem}
+.hb-fallback{text-align:center;font-size:.85rem;color:#64748b;margin:.75rem 0 0}
+.hb-fallback a{color:#a08632;font-weight:600}
+/* unit pages: booking panel directly under the hero, above the fold */
+.book-panel{background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(10,14,26,.12);border-top:4px solid #c9a84c;padding:1.5rem;margin:1.5rem 0 2rem}
+.book-panel h2{margin:0 0 .25rem;font-family:'Playfair Display',serif;color:#0a0e1a}
+.book-panel .book-panel-sub{margin:0 0 1rem;color:#64748b;font-size:.95rem}
+@media(max-width:800px){.book-direct{padding:3.5rem 1rem}.hb-panel,.book-panel{padding:1rem}.hb-widget,.hb-widget:empty::before{min-height:360px}}
+/* 2026-09-11 00:0x ET — homepage SEARCH slot holds a single ~106px bar (measured), not a panel: floor it to the bar. */
+.hb-widget--search{min-height:120px}
+/* /search results page: Hospitable's results widget sizes its search bar to the VIEWPORT (measured 1200px wide at 1280, static), so a 912px card cannot contain it. Make the results panel full-bleed white instead of a card; the widget's own cards carry the layout. */
+.search-results{padding:4rem 0 5rem}
+.search-results .hb-panel{max-width:none;border-radius:0;box-shadow:none;padding:1.5rem 0 2rem}
+.search-results .hb-widget--search-results{min-height:400px}
+.search-results .section-label,.search-results .section-title,.search-results .section-desc{padding-left:1.5rem;padding-right:1.5rem}
+/* 2026-09-11 00:1x ET — Hospitable's search widget (both variants) sizes its bar to the VIEWPORT: measured 1200px at 1280 (x=40) and 342px at 390 (x=24), regardless of its container. A centered card cannot contain it, so the white band is FULL-BLEED on both the homepage #book-direct section and /search; the heading stays inside the normal section width. Only the two new booking components are affected. */
+.book-direct .section-container{max-width:none;padding:0}
+.book-direct .section-header{max-width:1100px;margin-left:auto;margin-right:auto;padding-left:1.5rem;padding-right:1.5rem}
+.book-direct .hb-panel{max-width:none;border-radius:0;padding:1.5rem 0 1.25rem}
+.book-direct{padding-left:0;padding-right:0}
+.book-direct .hb-fallback{padding:0 1.5rem}
+.search-results{padding-top:8rem} /* /search has no hero: clear the fixed nav (measured label hidden under it at 1280) */

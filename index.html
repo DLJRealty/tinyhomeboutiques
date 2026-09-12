@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="thb-attribution.js"></script>
 <meta charset="UTF-8">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRNRCW6F55"></script>
@@ -8,7 +9,11 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-CRNRCW6F55');
+  gtag('config', 'G-CRNRCW6F55', {
+    // Cross-domain measurement to the Hospitable booking flow (staged 2026-09-10): the same client_id/session
+    // continue onto booking.hospitable.com so purchase events there keep the page/campaign that produced them.
+    linker: { domains: ['tinyhomeboutiques.com', 'booking.hospitable.com'], accept_incoming: true, decorate_forms: true }
+  });
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tiny Home Boutiques | Pikes Peak Vacation Rentals</title>
@@ -391,13 +396,14 @@
   ]
 }
 </script>
+<link rel="stylesheet" href="hospitable-widgets.css">
 </head>
 
 <body>
 
 <!-- Return Visitor Banner -->
 <div class="return-banner" id="returnBanner">
-  Welcome back! The properties you viewed are still available. <a href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Book direct</a>.
+  Welcome back! The properties you viewed are still available. <a href="#book-direct">Book direct</a>.
   <button class="close-banner" onclick="document.getElementById('returnBanner').style.display='none';document.body.classList.remove('has-banner');">&times;</button>
 </div>
 
@@ -423,7 +429,7 @@
     <li><a href="/blog.html" onclick="closeMenu()">Blog</a></li>
     <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
     <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-    <li><a href="https://tinyhomeboutiques.guestybookings.com/" class="btn-book-nav" target="_blank" rel="noopener" onclick="closeMenu()">Book Now</a></li>
+    <li><a class="btn-book-nav" onclick="closeMenu()" href="#book-direct">Book Now</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -446,7 +452,7 @@
       Six handcrafted boutique tiny homes beneath Colorado's towering Pikes Peak. Book direct. Skip the fees. Live the story.
     </p>
     <div class="hero-actions">
-      <a href="https://tinyhomeboutiques.guestybookings.com/" class="btn-primary" target="_blank" rel="noopener">
+      <a class="btn-primary" href="#book-direct">
         <span>Book Direct &mdash; No Service Fees</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
       </a>
@@ -475,7 +481,7 @@
           <option value="6">6 Guests</option>
         </select>
       </label>
-      <a href="https://tinyhomeboutiques.guestybookings.com/" class="btn-check-avail" target="_blank" rel="noopener">Check Availability</a>
+      <a class="btn-check-avail" href="#book-direct">Check Availability</a>
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
@@ -568,13 +574,31 @@
     .brand-film .bf-stage{order:1}
   }
 </style>
+<!-- Hospitable Direct — SEARCH widget section (staged 2026-09-10). Only the booking path changed on this page. -->
+<section class="book-direct" id="book-direct" aria-label="Check availability and book direct">
+  <div class="section-container">
+    <div class="section-header reveal">
+      <div class="section-label">Book Direct</div>
+      <h2 class="section-title">Check Availability Across All Six Homes</h2>
+      <p class="section-desc">Pick your dates, see live pricing, and book right here on our site &mdash; no service fees, no middlemen.</p>
+    </div>
+    <div class="hb-panel">
+      <div class="hb-widget hb-widget--search" id="hb-search" data-hospitable-widget="search">
+        <!-- Hospitable Direct — homepage SEARCH widget (snippet 2 of 3). identifier = SITE uuid 89b93ad8… (NOT the booking-widget data-site-uuid used on the unit pages). results-url="/search" resolves to /search/index.html on GitHub Pages. -->
+        <script src="https://hospitable.b-cdn.net/direct-property-search-widget/hospitable-search-widget.prod.js"></script>
+        <hospitable-direct-mps identifier="89b93ad8-3a02-4f68-b255-611af81928e3" type="custom" results-url="/search"></hospitable-direct-mps></div>
+      <p class="hb-fallback">Prefer to talk to a person? <a href="mailto:stay@tinyhomeboutiques.com">stay@tinyhomeboutiques.com</a></p>
+    </div>
+  </div>
+</section>
+
 <section class="brand-film" id="brand-film" aria-label="Property film">
   <div class="bf-inner">
     <div class="bf-copy">
       <div class="eyebrow">See the stay</div>
       <h2>Wake up to <em>Pikes Peak</em>.</h2>
       <p>Forty-four seconds inside our design-forward boutique tiny homes in Woodland Park, Colorado &mdash; where every window frames the mountain. Then book your stay, direct with us.</p>
-      <a class="bf-cta" href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Book Direct &nbsp;&rarr;</a>
+      <a class="bf-cta" href="#book-direct">Book Direct &nbsp;&rarr;</a>
       <div class="bf-sub">Direct rates &middot; Superhost &middot; Pikes Peak views</div>
     </div>
     <figure class="bf-stage">
@@ -877,7 +901,7 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:2.5rem;" class="reveal">
-      <a href="https://tinyhomeboutiques.guestybookings.com/" class="btn-primary" target="_blank" rel="noopener">Book Your Stay</a>
+      <a class="btn-primary" href="#book-direct">Book Your Stay</a>
     </div>
   </div>
 </section>
@@ -1273,7 +1297,7 @@
   <div class="cta-inner reveal">
     <h2>Ready for Your Next Escape?</h2>
     <p>Book direct. No service fees, no middlemen &mdash; just unforgettable stays.</p>
-    <a href="https://tinyhomeboutiques.guestybookings.com/" class="cta-btn" target="_blank" rel="noopener">
+    <a class="cta-btn" href="#book-direct">
       Find Your Perfect Stay
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
     </a>
@@ -1351,7 +1375,7 @@
       <ul class="footer-links">
         <li><a href="#about">About Us</a></li>
         <li><a href="#reviews">Guest Reviews</a></li>
-        <li><a href="https://tinyhomeboutiques.guestybookings.com/" target="_blank" rel="noopener">Book Direct</a></li>
+        <li><a href="#book-direct">Book Direct</a></li>
         <li><a href="https://instagram.com/dlj_properties" target="_blank" rel="noopener">@dlj_properties</a></li>
         <li><a href="mailto:DLJrealty@yahoo.com">DLJrealty@yahoo.com</a></li>
       </ul>
@@ -1373,7 +1397,7 @@
     From
     <strong>$149/night</strong>
   </div>
-  <a href="https://tinyhomeboutiques.guestybookings.com/" class="btn-mobile-book" target="_blank" rel="noopener">Book Now</a>
+  <a class="btn-mobile-book" href="#book-direct">Book Now</a>
 </div>
 
 <script>

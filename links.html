@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="thb-attribution.js"></script>
 <meta charset="UTF-8">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRNRCW6F55"></script>
@@ -8,7 +9,11 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-CRNRCW6F55');
+  gtag('config', 'G-CRNRCW6F55', {
+    // Cross-domain measurement to the Hospitable booking flow (staged 2026-09-10): the same client_id/session
+    // continue onto booking.hospitable.com so purchase events there keep the page/campaign that produced them.
+    linker: { domains: ['tinyhomeboutiques.com', 'booking.hospitable.com'], accept_incoming: true, decorate_forms: true }
+  });
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Book Direct & Save | Tiny Home Boutiques — Pikes Peak Tiny Homes</title>

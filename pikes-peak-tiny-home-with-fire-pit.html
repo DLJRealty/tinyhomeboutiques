@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="thb-attribution.js"></script>
 <meta charset="UTF-8">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRNRCW6F55"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-CRNRCW6F55');
+  gtag('config', 'G-CRNRCW6F55', {
+    // Cross-domain measurement to the Hospitable booking flow (staged 2026-09-10): the same client_id/session
+    // continue onto booking.hospitable.com so purchase events there keep the page/campaign that produced them.
+    linker: { domains: ['tinyhomeboutiques.com', 'booking.hospitable.com'], accept_incoming: true, decorate_forms: true }
+  });
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pikes Peak Tiny Home with Fire Pit — Mountain Retreat | Tiny Home Boutiques</title>
@@ -206,7 +211,7 @@ a:hover { color: var(--gold-light); }
       <li><a href="https://tinyhomeboutiques.com">Home</a></li>
       <li><a href="https://tinyhomeboutiques.com/#properties">Properties</a></li>
       <li><a href="things-to-do-woodland-park-colorado.html">Area Guide</a></li>
-      <li><a href="https://tinyhomeboutiques.guestybookings.com/en">Book Now</a></li>
+      <li><a href="/#book-direct">Book Now</a></li>
     </ul>
   </div>
 </nav>
@@ -285,7 +290,7 @@ a:hover { color: var(--gold-light); }
         <span class="amenity">10 min to Pikes Peak</span>
       </div>
       <div class="book-links">
-        <a href="https://tinyhomeboutiques.guestybookings.com/en">Book Direct (no service fees)</a>
+        <a href="/#book-direct">Book Direct (no service fees)</a>
       </div>
     </div>
   </div>
@@ -343,7 +348,7 @@ a:hover { color: var(--gold-light); }
   <div class="cta-box" id="booking-direct">
     <h3>How Direct Booking Saves You 15%</h3>
     <p>Airbnb and VRBO add service and site fees at checkout. Booking at tinyhomeboutiques.com skips those fees. Same Mountain Retreat, same fire pit, same operator team — lower total cost.</p>
-    <a href="https://tinyhomeboutiques.guestybookings.com/en" class="cta-button">Book Direct &mdash; No Service Fees</a>
+    <a class="cta-button" href="/#book-direct">Book Direct &mdash; No Service Fees</a>
   </div>
 
   <div class="article-section" id="faq">
@@ -384,7 +389,7 @@ a:hover { color: var(--gold-light); }
   <div class="cta-box">
     <h3>Ready for the Fire Pit Evening?</h3>
     <p>Mountain Retreat, 10 minutes from Pikes Peak, fire pit lit by 8:30 p.m. Book direct and keep the Airbnb fees in your pocket.</p>
-    <a href="https://tinyhomeboutiques.guestybookings.com/en" class="cta-button">Check Availability</a>
+    <a class="cta-button" href="/#book-direct">Check Availability</a>
   </div>
 
   <div class="related-articles">
@@ -420,7 +425,7 @@ a:hover { color: var(--gold-light); }
       <a href="tiny-homes-near-pikes-peak.html">Pikes Peak Guide</a>
       <a href="woodland-park-cabin-rentals.html">Cabin Comparison</a>
       <a href="things-to-do-woodland-park-colorado.html">Area Guide</a>
-      <a href="https://tinyhomeboutiques.guestybookings.com/en">Book Direct</a>
+      <a href="/#book-direct">Book Direct</a>
     </div>
     <div class="footer-copy">&copy; 2026 DLJ Properties LLC &middot; Tiny Home Boutiques</div>
   </div>
