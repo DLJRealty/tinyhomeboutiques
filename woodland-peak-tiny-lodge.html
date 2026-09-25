@@ -166,7 +166,18 @@ footer a{color:#64748b}
 <script>
 function showPopup(){if(localStorage.getItem('thb_popup_seen'))return;document.getElementById('emailPopup').style.display='flex';}
 function closePopup(){document.getElementById('emailPopup').style.display='none';localStorage.setItem('thb_popup_seen','1');}
-function submitPopup(e){e.preventDefault();var email=document.getElementById('popupEmail').value;fetch('https://formsubmit.co/ajax/DLJrealty@yahoo.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({email:email,_subject:'Website Popup Signup',source:'tinyhomeboutiques.com popup',_template:'table'})}).then(function(r){if(!r.ok){throw new Error('http '+r.status);}return r.json();}).then(function(d){if(!d||String(d.success)!=='true'){throw new Error('not accepted');}document.getElementById('popupForm').style.display='none';document.getElementById('popupError').style.display='none';document.getElementById('popupSuccess').style.display='block';localStorage.setItem('thb_popup_seen','1');}).catch(function(){document.getElementById('popupError').style.display='block';});}
+/* Email sign-up: saved to our list and sent to our inbox. */
+function thbSignup(email, source, consentEl, subject) {
+  var consent = consentEl ? String(consentEl.innerText || '').replace(/\s+/g, ' ').trim() : '';
+  var store = fetch('https://checkin.tinyhomeboutiques.com/signup', {method: 'POST', headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({email: email, source: source, consent_text: consent, page_url: location.href})
+  }).then(function(r){ return r.ok; }).catch(function(){ return false; });
+  var notify = fetch('https://formsubmit.co/ajax/DLJrealty@yahoo.com', {method: 'POST', headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+    body: JSON.stringify({email: email, _subject: subject, source: source + ' (' + location.pathname + ')', _template: 'table'})
+  }).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){ return !!d && String(d.success) === 'true'; }).catch(function(){ return false; });
+  return Promise.all([store, notify]).then(function(a){ return a[0] || a[1]; });
+}
+function submitPopup(e){e.preventDefault();var email=document.getElementById('popupEmail').value;thbSignup(email, 'web_popup', document.getElementById('popupForm').parentNode, 'Website Popup Signup').then(function(ok){ if (!ok) { throw new Error('not accepted'); }document.getElementById('popupForm').style.display='none';document.getElementById('popupError').style.display='none';document.getElementById('popupSuccess').style.display='block';localStorage.setItem('thb_popup_seen','1');}).catch(function(){document.getElementById('popupError').style.display='block';});}
 setTimeout(showPopup,8000);var scrollTriggered=false;window.addEventListener('scroll',function(){if(!scrollTriggered&&window.scrollY>document.body.scrollHeight*0.3){scrollTriggered=true;showPopup();}});
 </script>
 </html>
